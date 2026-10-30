@@ -11,7 +11,7 @@
     name="description"
     content="Hemant Sharma - Technical Project Manager, Agile Delivery Lead, SAFe Agilist and Certified Scrum Master specialising in telecom transformation, billing, mediation, automation and enterprise delivery.">
 
-  <meta name="theme-color" content="#0a1420">
+  <meta name="theme-color" content="#09131e">
 
   <title>Hemant Sharma | Technical Project Manager</title>
 
@@ -22,20 +22,19 @@
 
     :root {
       --red: #e60000;
-      --red-dark: #b90000;
-      --red-light: #ff5a5a;
-      --navy: #0a1420;
-      --navy-2: #102239;
-      --navy-3: #18324e;
+      --red-dark: #b80000;
+      --red-light: #ff6262;
+      --navy: #09131e;
+      --navy-2: #10243a;
+      --navy-3: #193650;
       --white: #ffffff;
       --light: #f4f7fa;
-      --lighter: #f9fbfd;
+      --lighter: #fafbfd;
       --text: #263545;
       --muted: #687787;
       --border: #e1e7ed;
       --green: #35d07f;
       --blue: #45d6ff;
-      --gold: #f5b942;
 
       --shadow:
         0 18px 50px rgba(10, 20, 32, 0.09);
@@ -72,11 +71,11 @@
     body::before {
       content: "";
       position: fixed;
-      top: -200px;
-      right: -200px;
-      width: 450px;
-      height: 450px;
+      top: -180px;
+      right: -180px;
       z-index: -1;
+      width: 430px;
+      height: 430px;
       border-radius: 50%;
       background: rgba(230, 0, 0, 0.05);
       filter: blur(80px);
@@ -84,18 +83,13 @@
     }
 
     ::selection {
-      color: var(--white);
+      color: white;
       background: var(--red);
     }
 
     a {
       color: inherit;
       text-decoration: none;
-    }
-
-    button,
-    a {
-      -webkit-tap-highlight-color: transparent;
     }
 
     img {
@@ -115,37 +109,10 @@
       padding: 96px 0;
     }
 
-    /* =========================================================
-       ICONS
-    ========================================================= */
-
     .icon {
       width: 21px;
       height: 21px;
       flex: 0 0 auto;
-    }
-
-    .section-icon {
-      width: 52px;
-      height: 52px;
-      flex: 0 0 auto;
-      display: grid;
-      place-items: center;
-      color: var(--white);
-      border-radius: 15px;
-      background:
-        linear-gradient(
-          135deg,
-          var(--red),
-          #920000
-        );
-      box-shadow:
-        0 13px 30px rgba(230, 0, 0, 0.22);
-    }
-
-    .section-icon svg {
-      width: 25px;
-      height: 25px;
     }
 
     /* =========================================================
@@ -156,14 +123,14 @@
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 2000;
+      z-index: 3000;
       width: 0;
       height: 3px;
       background:
         linear-gradient(
           90deg,
           var(--red),
-          #ff7777
+          #ff8181
         );
     }
 
@@ -175,21 +142,20 @@
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 1000;
+      z-index: 2000;
       width: 100%;
-      color: var(--white);
+      color: white;
       background: rgba(8, 17, 27, 0.93);
       border-bottom:
         1px solid rgba(255, 255, 255, 0.08);
       backdrop-filter: blur(16px);
-
       transition:
         background 0.3s ease,
         box-shadow 0.3s ease;
     }
 
     nav.scrolled {
-      background: rgba(8, 17, 27, 0.985);
+      background: rgba(8, 17, 27, 0.99);
       box-shadow:
         0 10px 35px rgba(0, 0, 0, 0.2);
     }
@@ -199,7 +165,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 32px;
+      gap: 28px;
     }
 
     .brand {
@@ -214,7 +180,8 @@
 
     .nav-links {
       display: flex;
-      gap: 24px;
+      align-items: center;
+      gap: 20px;
       list-style: none;
       padding: 0;
     }
@@ -224,8 +191,8 @@
       display: block;
       padding: 26px 0 22px;
       color: #bdc9d5;
-      font-size: 0.86rem;
-      font-weight: 600;
+      font-size: 0.82rem;
+      font-weight: 700;
       transition: color 0.2s ease;
     }
 
@@ -243,7 +210,7 @@
 
     .nav-links a:hover,
     .nav-links a.active {
-      color: var(--white);
+      color: white;
     }
 
     .nav-links a:hover::after,
@@ -256,9 +223,10 @@
       width: 42px;
       height: 42px;
       place-items: center;
-      color: var(--white);
+      color: white;
       background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border:
+        1px solid rgba(255, 255, 255, 0.2);
       border-radius: 10px;
       cursor: pointer;
     }
@@ -272,7 +240,7 @@
       padding: 150px 0 115px;
       display: flex;
       align-items: center;
-      color: var(--white);
+      color: white;
       background:
         radial-gradient(
           circle at 82% 22%,
@@ -280,14 +248,14 @@
           transparent 27%
         ),
         radial-gradient(
-          circle at 10% 92%,
+          circle at 9% 92%,
           rgba(69, 214, 255, 0.1),
           transparent 28%
         ),
         linear-gradient(
           135deg,
-          #08121d,
-          #172b42
+          #07111b,
+          #172c44
         );
     }
 
@@ -304,7 +272,7 @@
       gap: 10px;
       margin-bottom: 20px;
       color: #ff7777;
-      font-size: 0.78rem;
+      font-size: 0.77rem;
       font-weight: 900;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -377,7 +345,7 @@
     }
 
     .power-word {
-      color: var(--white);
+      color: white;
       font-weight: 800;
     }
 
@@ -408,8 +376,7 @@
       transition:
         transform 0.25s ease,
         background 0.25s ease,
-        color 0.25s ease,
-        border-color 0.25s ease;
+        color 0.25s ease;
     }
 
     .btn::before {
@@ -439,7 +406,7 @@
     }
 
     .btn-primary {
-      color: var(--white);
+      color: white;
       background: var(--red);
     }
 
@@ -448,18 +415,17 @@
     }
 
     .btn-outline {
-      color: var(--white);
-      background: rgba(255, 255, 255, 0.02);
-      border-color: rgba(255, 255, 255, 0.28);
+      color: white;
+      background:
+        rgba(255, 255, 255, 0.02);
+      border-color:
+        rgba(255, 255, 255, 0.28);
     }
 
     .btn-outline:hover {
       color: var(--navy);
-      background: var(--white);
-      border-color: var(--white);
+      background: white;
     }
-
-    /* HERO PHOTO */
 
     .hero-photo {
       position: relative;
@@ -482,19 +448,6 @@
         );
     }
 
-    .hero-photo::after {
-      content: "";
-      position: absolute;
-      top: -35px;
-      right: -35px;
-      z-index: -2;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: rgba(230, 0, 0, 0.22);
-      filter: blur(50px);
-    }
-
     .photo-frame {
       overflow: hidden;
       border:
@@ -511,7 +464,7 @@
       object-fit: cover;
       object-position: center 34%;
       transition:
-        transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+        transform 0.8s ease,
         filter 0.5s ease;
     }
 
@@ -527,7 +480,8 @@
       max-width: 330px;
       padding: 15px 18px;
       color: #deebf5;
-      background: rgba(8, 18, 29, 0.94);
+      background:
+        rgba(8, 18, 29, 0.94);
       border:
         1px solid rgba(255, 255, 255, 0.14);
       border-radius: 12px;
@@ -576,7 +530,7 @@
       overflow: hidden;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      background: var(--white);
+      background: white;
       border-radius: 19px;
       box-shadow: var(--shadow);
     }
@@ -585,17 +539,10 @@
       padding: 28px 16px;
       text-align: center;
       border-right: 1px solid var(--border);
-      transition:
-        background 0.25s ease,
-        transform 0.25s ease;
     }
 
     .metric:last-child {
       border-right: none;
-    }
-
-    .metric:hover {
-      background: var(--lighter);
     }
 
     .metric-icon {
@@ -607,11 +554,6 @@
       color: var(--red);
       background: #fff0f0;
       border-radius: 12px;
-    }
-
-    .metric-icon svg {
-      width: 22px;
-      height: 22px;
     }
 
     .metric strong {
@@ -631,7 +573,7 @@
     ========================================================= */
 
     .section-head {
-      max-width: 800px;
+      max-width: 820px;
       margin-bottom: 50px;
     }
 
@@ -639,6 +581,24 @@
       display: flex;
       align-items: flex-start;
       gap: 17px;
+    }
+
+    .section-icon {
+      width: 52px;
+      height: 52px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      color: white;
+      background:
+        linear-gradient(
+          135deg,
+          var(--red),
+          #930000
+        );
+      border-radius: 15px;
+      box-shadow:
+        0 13px 30px rgba(230, 0, 0, 0.22);
     }
 
     .section-label {
@@ -688,8 +648,6 @@
     }
 
     .strength {
-      position: relative;
-      overflow: hidden;
       padding: 14px 15px;
       color: #354556;
       background: var(--light);
@@ -704,57 +662,20 @@
     }
 
     .strength:hover {
-      color: var(--white);
+      color: white;
       background: var(--navy);
       transform: translateX(4px);
     }
 
     /* =========================================================
-       EXPERTISE
+       COMMON CARDS
     ========================================================= */
 
     #expertise,
     #experience,
     #skills,
-    #credentials {
+    #certifications {
       background: var(--light);
-    }
-
-    .expertise-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .expertise-card {
-      position: relative;
-      overflow: hidden;
-      min-height: 150px;
-      padding: 24px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 15px;
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-    }
-
-    .expertise-card::after {
-      content: "";
-      position: absolute;
-      right: -30px;
-      bottom: -30px;
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: rgba(230, 0, 0, 0.045);
-    }
-
-    .expertise-card:hover {
-      border-color: rgba(230, 0, 0, 0.17);
-      box-shadow: var(--shadow);
-      transform: translateY(-7px);
     }
 
     .card-icon {
@@ -764,100 +685,38 @@
       display: grid;
       place-items: center;
       color: var(--red);
-      background:
-        linear-gradient(
-          135deg,
-          #fff0f0,
-          #ffffff
-        );
+      background: #fff0f0;
       border: 1px solid #ffdada;
       border-radius: 12px;
+      font-size: 1.2rem;
+      font-weight: 900;
     }
 
-    .card-icon svg {
-      width: 22px;
-      height: 22px;
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .expertise-card {
+      min-height: 145px;
+      padding: 24px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .expertise-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-7px);
     }
 
     .expertise-card h3 {
       color: var(--navy);
       font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    /* =========================================================
-       LEADERSHIP
-    ========================================================= */
-
-    .delivery-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-    }
-
-    .delivery-card,
-    .skill-box,
-    .domain-card,
-    .credential-box {
-      position: relative;
-      overflow: hidden;
-      padding: 29px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
-    }
-
-    .delivery-card::before,
-    .skill-box::before,
-    .domain-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 15%;
-      width: 0;
-      height: 3px;
-      background:
-        linear-gradient(
-          90deg,
-          var(--red),
-          var(--red-light)
-        );
-      transition:
-        width 0.35s ease,
-        left 0.35s ease;
-    }
-
-    .delivery-card:hover::before,
-    .skill-box:hover::before,
-    .domain-card:hover::before {
-      left: 0;
-      width: 100%;
-    }
-
-    .delivery-card:hover,
-    .skill-box:hover,
-    .domain-card:hover,
-    .credential-box:hover {
-      border-color: rgba(230, 0, 0, 0.16);
-      box-shadow: var(--shadow);
-      transform: translateY(-7px);
-    }
-
-    .delivery-card h3,
-    .skill-box h3,
-    .domain-card h3,
-    .credential-box h3 {
-      margin-bottom: 16px;
-      color: var(--navy);
-    }
-
-    .delivery-card li {
-      margin-bottom: 10px;
-      color: #536271;
     }
 
     /* =========================================================
@@ -871,8 +730,7 @@
       grid-template-columns: 195px 1fr;
       gap: 26px;
       align-items: center;
-      color: var(--white);
-      border-radius: 19px;
+      color: white;
       background:
         radial-gradient(
           circle at 90% 15%,
@@ -884,6 +742,7 @@
           #0f1c2b,
           #1b334c
         );
+      border-radius: 19px;
       box-shadow:
         0 20px 55px rgba(13, 23, 36, 0.16);
     }
@@ -904,7 +763,7 @@
     .experience-number span {
       color: #bac7d2;
       font-size: 0.78rem;
-      letter-spacing: 1.1px;
+      letter-spacing: 1px;
       text-transform: uppercase;
     }
 
@@ -943,7 +802,7 @@
       left: 0;
       width: 24px;
       height: 24px;
-      background: var(--white);
+      background: white;
       border: 6px solid var(--red);
       border-radius: 50%;
       transition:
@@ -959,7 +818,7 @@
 
     .timeline-content {
       padding: 29px;
-      background: var(--white);
+      background: white;
       border: 1px solid var(--border);
       border-radius: 16px;
       transition:
@@ -981,7 +840,7 @@
     }
 
     .timeline-content h3 {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       color: var(--navy);
       font-size: 1.35rem;
     }
@@ -990,12 +849,53 @@
       color: var(--muted);
     }
 
+    .experience-company {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 14px 0 18px;
+      padding: 12px 14px;
+      background: var(--lighter);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .company-logo-wrapper {
+      width: 72px;
+      height: 54px;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .company-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .company-info strong {
+      display: block;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .company-info span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
     .role-badge {
       margin-top: 15px;
       padding: 7px 10px;
       display: inline-flex;
       align-items: center;
-      gap: 7px;
       color: #a80000;
       background: #fff0f0;
       border-radius: 7px;
@@ -1004,19 +904,14 @@
       letter-spacing: 0.35px;
     }
 
-    .role-badge svg {
-      width: 14px;
-      height: 14px;
-    }
-
     /* =========================================================
-       MAJOR PROGRAMS
+       PROGRAMS
     ========================================================= */
 
     .program {
       overflow: hidden;
       margin-bottom: 31px;
-      background: var(--white);
+      background: white;
       border: 1px solid var(--border);
       border-radius: 19px;
       box-shadow:
@@ -1033,7 +928,7 @@
 
     .program-header {
       padding: 30px 33px;
-      color: var(--white);
+      color: white;
       background:
         radial-gradient(
           circle at 90% 10%,
@@ -1046,7 +941,6 @@
     .program-header small {
       color: #ff7777;
       font-weight: 900;
-      letter-spacing: 0.8px;
     }
 
     .program-header h3 {
@@ -1062,18 +956,8 @@
       padding: 30px 33px;
     }
 
-    .program-body h4 {
-      margin-bottom: 12px;
-      color: var(--navy);
-    }
-
-    .program-body li {
-      margin-bottom: 9px;
-      color: #4f5f6e;
-    }
-
     .components {
-      margin-bottom: 24px;
+      margin: 16px 0 24px;
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
@@ -1086,16 +970,11 @@
       border-radius: 7px;
       font-size: 0.76rem;
       font-weight: 800;
-      transition:
-        color 0.2s ease,
-        background 0.2s ease,
-        transform 0.2s ease;
     }
 
-    .component:hover {
-      color: var(--white);
-      background: var(--red);
-      transform: translateY(-2px);
+    .program-body li {
+      margin-bottom: 9px;
+      color: #4f5f6e;
     }
 
     .outcome-banner {
@@ -1117,7 +996,7 @@
     .outcome-item strong {
       display: block;
       color: var(--red);
-      font-size: 1.25rem;
+      font-size: 1.17rem;
     }
 
     .outcome-item span {
@@ -1130,7 +1009,7 @@
     ========================================================= */
 
     #achievements {
-      color: var(--white);
+      color: white;
       background:
         radial-gradient(
           circle at 88% 15%,
@@ -1141,7 +1020,7 @@
     }
 
     #achievements .section-head h2 {
-      color: var(--white);
+      color: white;
     }
 
     #achievements .section-head p {
@@ -1163,22 +1042,13 @@
       border-radius: 15px;
       transition:
         transform 0.3s ease,
-        background 0.3s ease,
-        border-color 0.3s ease;
+        background 0.3s ease;
     }
 
     .achievement:hover {
       background:
         rgba(255, 255, 255, 0.08);
-      border-color:
-        rgba(255, 100, 100, 0.3);
       transform: translateY(-7px);
-    }
-
-    .achievement .card-icon {
-      color: #ff6c6c;
-      background: rgba(255, 255, 255, 0.07);
-      border-color: rgba(255, 255, 255, 0.1);
     }
 
     .achievement strong {
@@ -1229,7 +1099,6 @@
       font-size: 6rem;
       font-weight: 900;
       line-height: 1;
-      pointer-events: none;
     }
 
     .portfolio-card h3 {
@@ -1239,20 +1108,24 @@
       color: var(--navy);
     }
 
-    .portfolio-items {
+    .portfolio-items,
+    .tags {
       position: relative;
       z-index: 1;
-      margin-bottom: 16px;
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+    }
+
+    .portfolio-items {
+      margin-bottom: 16px;
     }
 
     .portfolio-item,
     .tag {
       padding: 8px 11px;
       color: #425160;
-      background: var(--white);
+      background: white;
       border: 1px solid var(--border);
       border-radius: 7px;
       font-size: 0.77rem;
@@ -1265,7 +1138,7 @@
 
     .portfolio-item:hover,
     .tag:hover {
-      color: var(--white);
+      color: white;
       background: var(--navy);
       transform: translateY(-2px);
     }
@@ -1278,29 +1151,39 @@
     }
 
     /* =========================================================
-       SKILLS
+       SKILLS AND DOMAIN
     ========================================================= */
 
-    .skills-grid {
+    .skills-grid,
+    .domain-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 22px;
     }
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+    .skill-box,
+    .domain-card {
+      position: relative;
+      overflow: hidden;
+      padding: 29px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
     }
 
-    /* =========================================================
-       DOMAIN
-    ========================================================= */
+    .skill-box:hover,
+    .domain-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-7px);
+    }
 
-    .domain-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 21px;
+    .skill-box h3,
+    .domain-card h3 {
+      margin-bottom: 16px;
+      color: var(--navy);
     }
 
     .domain-card p {
@@ -1308,32 +1191,196 @@
     }
 
     /* =========================================================
-       CREDENTIALS
+       EDUCATION TILES
     ========================================================= */
 
-    .credential-grid {
+    #education {
+      background:
+        linear-gradient(
+          180deg,
+          #ffffff,
+          #f9fbfd
+        );
+    }
+
+    .education-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .education-tile {
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
       gap: 25px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow:
+        0 10px 35px rgba(10, 20, 32, 0.05);
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
     }
 
-    .credential {
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
+    .education-tile::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background:
+        linear-gradient(
+          180deg,
+          var(--red),
+          var(--red-light)
+        );
     }
 
-    .credential:last-child {
-      border-bottom: none;
+    .education-tile:hover {
+      box-shadow:
+        0 24px 60px rgba(10, 20, 32, 0.11);
+      transform: translateY(-8px);
     }
 
-    .credential strong {
-      display: block;
-      color: #334354;
+    .education-logo-box {
+      width: 125px;
+      height: 105px;
+      flex: 0 0 auto;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow:
+        0 10px 25px rgba(10, 20, 32, 0.06);
     }
 
-    .credential span {
+    .education-logo {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .education-label {
+      margin-bottom: 7px;
+      color: var(--red);
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .education-content h3 {
+      margin-bottom: 7px;
+      color: var(--navy);
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    .education-content h4 {
+      margin-bottom: 8px;
+      color: #4e5d6c;
+      font-size: 0.92rem;
+    }
+
+    .education-content p {
       color: var(--muted);
-      font-size: 0.84rem;
+      font-size: 0.86rem;
+    }
+
+    /* =========================================================
+       CERTIFICATION TILES
+    ========================================================= */
+
+    .certification-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .certification-tile {
+      position: relative;
+      overflow: hidden;
+      min-height: 270px;
+      padding: 27px;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+    }
+
+    .certification-tile:hover {
+      box-shadow:
+        0 22px 55px rgba(10, 20, 32, 0.11);
+      transform: translateY(-9px);
+    }
+
+    .certification-logo-box {
+      height: 105px;
+      margin-bottom: 22px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border: 1px solid #edf0f3;
+      border-radius: 13px;
+    }
+
+    .certification-logo {
+      max-width: 100%;
+      max-height: 80px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .certification-tile:hover
+    .certification-logo {
+      transform: scale(1.05);
+    }
+
+    .certification-type {
+      margin-bottom: 6px;
+      color: var(--red);
+      font-size: 0.67rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .certification-tile h3 {
+      margin-bottom: 8px;
+      color: var(--navy);
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .certification-tile p {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .certification-accent {
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background:
+        rgba(230, 0, 0, 0.04);
     }
 
     /* =========================================================
@@ -1343,7 +1390,7 @@
     .contact-card {
       padding: 65px 30px;
       text-align: center;
-      color: var(--white);
+      color: white;
       border-radius: 25px;
       background:
         radial-gradient(
@@ -1379,10 +1426,6 @@
       gap: 12px;
     }
 
-    /* =========================================================
-       FOOTER
-    ========================================================= */
-
     footer {
       padding: 28px 20px;
       text-align: center;
@@ -1392,19 +1435,19 @@
     }
 
     /* =========================================================
-       BACK TO TOP
+       BACK TO TOP AND REVEALS
     ========================================================= */
 
     .back-to-top {
       position: fixed;
       right: 22px;
       bottom: 22px;
-      z-index: 900;
+      z-index: 1500;
       width: 46px;
       height: 46px;
       display: grid;
       place-items: center;
-      color: var(--white);
+      color: white;
       background: var(--red);
       border: none;
       border-radius: 50%;
@@ -1426,20 +1469,12 @@
       transform: translateY(0);
     }
 
-    .back-to-top:hover {
-      transform: translateY(-4px);
-    }
-
-    /* =========================================================
-       SCROLL REVEAL
-    ========================================================= */
-
     .reveal {
       opacity: 0;
       transform: translateY(32px);
       transition:
-        opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
-        transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+        opacity 0.7s ease,
+        transform 0.7s ease;
     }
 
     .reveal.visible {
@@ -1460,9 +1495,13 @@
       .achievement-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
+      .certification-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
-    @media (max-width: 880px) {
+    @media (max-width: 900px) {
       .nav-links {
         position: absolute;
         top: 74px;
@@ -1472,11 +1511,11 @@
         flex-direction: column;
         gap: 0;
         padding: 12px;
-        background: rgba(8, 17, 27, 0.99);
+        background:
+          rgba(8, 17, 27, 0.99);
         border:
           1px solid rgba(255, 255, 255, 0.1);
         border-radius: 14px;
-        box-shadow: var(--shadow-dark);
       }
 
       .nav-links.open {
@@ -1509,8 +1548,8 @@
         left: 16px;
       }
 
-      .expertise-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .education-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -1531,23 +1570,19 @@
 
       .metric-grid,
       .expertise-grid,
-      .delivery-grid,
       .achievement-grid,
       .portfolio-grid,
       .skills-grid,
       .domain-grid,
-      .credential-grid,
+      .certification-grid,
       .outcome-banner {
         grid-template-columns: 1fr;
       }
 
       .metric {
         border-right: none;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .metric:last-child {
-        border-bottom: none;
+        border-bottom:
+          1px solid var(--border);
       }
 
       .strength-list {
@@ -1566,32 +1601,22 @@
           1px solid rgba(255, 255, 255, 0.14);
       }
 
-      .section-title-row {
-        align-items: center;
-      }
-
-      .section-icon {
-        width: 46px;
-        height: 46px;
-      }
-
       .profile-image {
         height: 470px;
-      }
-
-      .photo-label {
-        right: 15px;
-        bottom: 20px;
-        max-width: none;
       }
 
       .timeline-entry {
         padding-left: 48px;
       }
 
-      .program-header,
-      .program-body {
-        padding: 25px 22px;
+      .education-tile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .education-logo-box {
+        width: 110px;
+        height: 90px;
       }
 
       .contact-card {
@@ -1616,18 +1641,13 @@
     id="scrollProgress">
   </div>
 
-  <!-- =======================================================
-       NAVIGATION
-  ======================================================== -->
+  <!-- NAVIGATION -->
 
   <nav id="navigation">
 
     <div class="container nav-container">
 
-      <a
-        href="#home"
-        class="brand"
-        aria-label="Hemant Sharma home">
+      <a href="#home" class="brand">
         HS<span>.</span>
       </a>
 
@@ -1635,8 +1655,7 @@
         class="mobile-menu-button"
         id="mobileMenuButton"
         type="button"
-        aria-label="Open navigation menu"
-        aria-expanded="false">
+        aria-label="Open navigation menu">
 
         <svg
           class="icon"
@@ -1659,7 +1678,8 @@
         <li><a href="#achievements">Impact</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -1667,9 +1687,7 @@
 
   </nav>
 
-  <!-- =======================================================
-       HERO
-  ======================================================== -->
+  <!-- HERO -->
 
   <header id="home" class="hero">
 
@@ -1701,42 +1719,16 @@
           <span class="red-highlight">
             driving transformation
           </span>
-          across telecom OSS/BSS, CRM, billing and mediation
-          ecosystems. Proven experience
-          <span class="power-word">
-            orchestrating cross-functional teams
-          </span>,
-          governing high-volume data migration and delivering
-          controlled enterprise change across complex,
-          multi-system architectures.
+          across telecom OSS/BSS, CRM, CPQ, billing and mediation
+          ecosystems. Proven experience orchestrating
+          cross-functional teams, governing high-volume data
+          migration and delivering controlled change across
+          complex multi-system architectures.
         </p>
 
         <div class="hero-actions">
 
           <a href="#experience" class="btn btn-primary">
-
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-
-              <rect
-                x="3"
-                y="7"
-                width="18"
-                height="13"
-                rx="2">
-              </rect>
-
-              <path
-                d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-              </path>
-
-              <path d="M3 12h18"></path>
-            </svg>
-
             Explore Experience
           </a>
 
@@ -1744,19 +1736,6 @@
             href="Hemant_Sharma_Agile_Project_Manager_CSM_SAFe_8+Years.docx"
             class="btn btn-outline"
             download>
-
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-
-              <path d="M12 3v12"></path>
-              <path d="m7 10 5 5 5-5"></path>
-              <path d="M5 21h14"></path>
-            </svg>
-
             Download Resume
           </a>
 
@@ -1765,17 +1744,6 @@
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-outline">
-
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="currentColor">
-
-              <path
-                d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.1 2.1 0 1 0 4.75 7.2 2.1 2.1 0 0 0 4.75 3ZM21 13.9c0-3.8-2-5.6-4.7-5.6-2.2 0-3.1 1.2-3.7 2V8.5H9.1V21h3.5v-6.2c0-1.6.3-3.2 2.4-3.2 2.1 0 2.1 1.9 2.1 3.3V21H21v-7.1Z">
-              </path>
-            </svg>
-
             LinkedIn
           </a>
 
@@ -1786,12 +1754,10 @@
       <div class="hero-photo">
 
         <div class="photo-frame">
-
           <img
             src="profile.jpg"
             alt="Professional profile photograph"
             class="profile-image">
-
         </div>
 
         <div class="photo-label">
@@ -1806,27 +1772,14 @@
 
   </header>
 
-  <!-- =======================================================
-       IMPACT METRICS
-  ======================================================== -->
+  <!-- METRICS -->
 
   <div class="metrics">
 
     <div class="container metric-grid">
 
       <div class="metric">
-
-        <div class="metric-icon">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2">
-
-            <circle cx="12" cy="12" r="9"></circle>
-            <path d="M12 7v5l3 2"></path>
-          </svg>
-        </div>
+        <div class="metric-icon">◷</div>
 
         <strong
           class="counter"
@@ -1839,20 +1792,7 @@
       </div>
 
       <div class="metric">
-
-        <div class="metric-icon">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2">
-
-            <path d="M4 20V10"></path>
-            <path d="M10 20V4"></path>
-            <path d="M16 20v-7"></path>
-            <path d="M22 20H2"></path>
-          </svg>
-        </div>
+        <div class="metric-icon">↗</div>
 
         <strong
           class="counter"
@@ -1865,25 +1805,7 @@
       </div>
 
       <div class="metric">
-
-        <div class="metric-icon">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2">
-
-            <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
-
-            <path
-              d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5">
-            </path>
-
-            <path
-              d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6">
-            </path>
-          </svg>
-        </div>
+        <div class="metric-icon">◉</div>
 
         <strong
           class="counter"
@@ -1896,21 +1818,7 @@
       </div>
 
       <div class="metric">
-
-        <div class="metric-icon">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2">
-
-            <path d="M9 11l3 3L22 4"></path>
-
-            <path
-              d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11">
-            </path>
-          </svg>
-        </div>
+        <div class="metric-icon">✓</div>
 
         <strong
           class="counter"
@@ -1926,51 +1834,24 @@
 
   </div>
 
-  <!-- =======================================================
-       ABOUT
-  ======================================================== -->
+  <!-- ABOUT -->
 
   <section id="about">
 
     <div class="container">
 
       <div class="section-head">
+        <div class="section-label">About Me</div>
 
-        <div class="section-title-row">
+        <h2>
+          Technology depth combined with
+          enterprise delivery leadership.
+        </h2>
 
-          <div class="section-icon">
-
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-
-              <circle cx="12" cy="8" r="4"></circle>
-
-              <path
-                d="M4 21a8 8 0 0 1 16 0">
-              </path>
-            </svg>
-
-          </div>
-
-          <div>
-            <div class="section-label">About Me</div>
-
-            <h2>
-              Technology depth combined with
-              enterprise delivery leadership.
-            </h2>
-
-            <p>
-              Connecting business objectives, technical architecture,
-              engineering delivery and quality governance.
-            </p>
-          </div>
-
-        </div>
-
+        <p>
+          Connecting business strategy, technical architecture,
+          engineering delivery and quality governance.
+        </p>
       </div>
 
       <div class="about-grid">
@@ -1983,8 +1864,8 @@
               Enterprise Technical Program and Agile Delivery
               professional
             </strong>
-            with experience delivering large-scale telecom OSS/BSS,
-            CRM, CPQ, mediation and billing-modernisation initiatives.
+            with experience delivering telecom OSS/BSS, CRM,
+            CPQ, mediation and billing-modernisation initiatives.
           </p>
 
           <p>
@@ -1993,79 +1874,39 @@
               technical execution with strategic business alignment
             </strong>,
             including PI Planning, sprint governance, stakeholder
-            communication, risk mitigation, capacity planning,
-            dependency management and value-driven roadmap execution.
+            communication, dependency management and value-driven
+            roadmap execution.
           </p>
 
           <p>
             I have supported enterprise data migration,
             reconciliation and validation at substantial scale,
-            while strengthening release confidence through
-            automation, structured governance and reusable
-            validation frameworks.
+            while improving release confidence through automation,
+            structured governance and reusable frameworks.
           </p>
 
           <p>
-            My delivery approach focuses on
-            <strong>
-              orchestrating cross-functional teams,
-              accelerating decision-making and transforming
-              complex delivery challenges into measurable outcomes.
-            </strong>
+            My delivery approach focuses on orchestrating
+            cross-functional teams, accelerating decisions and
+            transforming complex delivery challenges into
+            measurable outcomes.
           </p>
 
         </div>
 
         <div class="strength-list">
-
-          <div class="strength">
-            Enterprise Program Delivery
-          </div>
-
-          <div class="strength">
-            Agile Transformation
-          </div>
-
-          <div class="strength">
-            Telecom OSS/BSS
-          </div>
-
-          <div class="strength">
-            Billing & Mediation Modernisation
-          </div>
-
-          <div class="strength">
-            Data Migration & Reconciliation
-          </div>
-
-          <div class="strength">
-            Automation Strategy
-          </div>
-
-          <div class="strength">
-            Stakeholder Governance
-          </div>
-
-          <div class="strength">
-            PI Planning & Execution
-          </div>
-
-          <div class="strength">
-            Cross-Team Leadership
-          </div>
-
-          <div class="strength">
-            Risk & Dependency Management
-          </div>
-
-          <div class="strength">
-            Release Governance
-          </div>
-
-          <div class="strength">
-            AI-Enabled Delivery
-          </div>
-
+          <div class="strength">Enterprise Program Delivery</div>
+          <div class="strength">Agile Transformation</div>
+          <div class="strength">Telecom OSS/BSS</div>
+          <div class="strength">Billing & Mediation</div>
+          <div class="strength">Data Migration</div>
+          <div class="strength">Automation Strategy</div>
+          <div class="strength">Stakeholder Governance</div>
+          <div class="strength">PI Planning</div>
+          <div class="strength">Cross-Team Leadership</div>
+          <div class="strength">Risk Management</div>
+          <div class="strength">Release Governance</div>
+          <div class="strength">AI-Enabled Delivery</div>
         </div>
 
       </div>
@@ -2074,234 +1915,81 @@
 
   </section>
 
-  <!-- =======================================================
-       CORE EXPERTISE
-  ======================================================== -->
+  <!-- EXPERTISE -->
 
   <section id="expertise">
 
     <div class="container">
 
       <div class="section-head">
+        <div class="section-label">Core Expertise</div>
+        <h2>Enterprise Delivery Capabilities</h2>
 
-        <div class="section-title-row">
-
-          <div class="section-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-
-              <circle cx="12" cy="12" r="3"></circle>
-
-              <path
-                d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1a1.7 1.7 0 0 0 1.9.3A1.7 1.7 0 0 0 10 3V2.8h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z">
-              </path>
-            </svg>
-          </div>
-
-          <div>
-            <div class="section-label">Core Expertise</div>
-            <h2>Enterprise Delivery Capabilities</h2>
-
-            <p>
-              A balanced portfolio of Agile leadership,
-              technical governance and telecom-domain expertise.
-            </p>
-          </div>
-
-        </div>
-
+        <p>
+          Agile leadership, technical governance,
+          automation and telecom-domain expertise.
+        </p>
       </div>
 
       <div class="expertise-grid">
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 17l6-6 4 4 6-8"></path>
-              <path d="M14 7h6v6"></path>
-            </svg>
-          </div>
+          <div class="card-icon">01</div>
           <h3>Agile Coaching & Scrum Facilitation</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <circle cx="12" cy="12" r="9"></circle>
-              <path d="M12 7v5l4 2"></path>
-            </svg>
-          </div>
+          <div class="card-icon">02</div>
           <h3>PI Planning & Program Increment Execution</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <circle cx="8" cy="8" r="3"></circle>
-              <circle cx="17" cy="7" r="2"></circle>
-              <path d="M2 20a6 6 0 0 1 12 0"></path>
-              <path d="M14 20a4 4 0 0 1 8 0"></path>
-            </svg>
-          </div>
+          <div class="card-icon">03</div>
           <h3>Cross-Functional Delivery Governance</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 4h16v12H7l-3 3V4Z"></path>
-              <path d="M8 8h8"></path>
-              <path d="M8 12h5"></path>
-            </svg>
-          </div>
+          <div class="card-icon">04</div>
           <h3>Stakeholder & Executive Communication</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M12 3 3 7v5c0 5 3.8 8.5 9 10 5.2-1.5 9-5 9-10V7l-9-4Z"></path>
-              <path d="m9 12 2 2 4-5"></path>
-            </svg>
-          </div>
-          <h3>Risk, Dependency & Delivery Assurance</h3>
+          <div class="card-icon">05</div>
+          <h3>Risk & Dependency Management</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 20V10"></path>
-              <path d="M10 20V4"></path>
-              <path d="M16 20v-7"></path>
-              <path d="M22 20H2"></path>
-            </svg>
-          </div>
-          <h3>Enterprise Roadmap & OKR Alignment</h3>
+          <div class="card-icon">06</div>
+          <h3>Enterprise Roadmap Alignment</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <rect x="3" y="4" width="18" height="6" rx="2"></rect>
-              <rect x="3" y="14" width="18" height="6" rx="2"></rect>
-              <path d="M7 7h.01"></path>
-              <path d="M7 17h.01"></path>
-            </svg>
-          </div>
-          <h3>Telecom OSS/BSS & Billing Transformation</h3>
+          <div class="card-icon">07</div>
+          <h3>Telecom OSS/BSS Transformation</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
-              <path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path>
-              <path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path>
-            </svg>
-          </div>
-          <h3>System Integration & Data Migration Oversight</h3>
+          <div class="card-icon">08</div>
+          <h3>System Integration & Data Migration</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 12h16"></path>
-              <path d="m14 6 6 6-6 6"></path>
-              <path d="M4 6v12"></path>
-            </svg>
-          </div>
+          <div class="card-icon">09</div>
           <h3>DevOps & CI/CD Enablement</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M12 2v4"></path>
-              <path d="M12 18v4"></path>
-              <path d="M4.93 4.93l2.83 2.83"></path>
-              <path d="M16.24 16.24l2.83 2.83"></path>
-              <path d="M2 12h4"></path>
-              <path d="M18 12h4"></path>
-              <path d="M4.93 19.07l2.83-2.83"></path>
-              <path d="M16.24 7.76l2.83-2.83"></path>
-            </svg>
-          </div>
-          <h3>Process Optimisation & Automation Strategy</h3>
+          <div class="card-icon">10</div>
+          <h3>Process Optimisation & Automation</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 12h6"></path>
-              <path d="M14 6h6"></path>
-              <path d="M14 18h6"></path>
-              <circle cx="12" cy="12" r="2"></circle>
-              <circle cx="12" cy="6" r="2"></circle>
-              <circle cx="12" cy="18" r="2"></circle>
-            </svg>
-          </div>
-          <h3>Multi-Team Coordination & Orchestration</h3>
+          <div class="card-icon">11</div>
+          <h3>Multi-Team Delivery Orchestration</h3>
         </article>
 
         <article class="expertise-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M3 21h18"></path>
-              <path d="M5 21V10l7-7 7 7v11"></path>
-              <path d="M9 14h6"></path>
-            </svg>
-          </div>
+          <div class="card-icon">12</div>
           <h3>Value-Driven Delivery Management</h3>
         </article>
 
@@ -2311,226 +1999,21 @@
 
   </section>
 
-  <!-- =======================================================
-       LEADERSHIP
-  ======================================================== -->
-
-  <section id="leadership">
-
-    <div class="container">
-
-      <div class="section-head">
-
-        <div class="section-title-row">
-
-          <div class="section-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M12 2 15 8l7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z"></path>
-            </svg>
-          </div>
-
-          <div>
-            <div class="section-label">Leadership</div>
-            <h2>Team Facilitation & Delivery Excellence</h2>
-
-            <p>
-              Empowering teams, strengthening governance and
-              accelerating delivery through transparent,
-              outcome-led leadership.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="delivery-grid">
-
-        <article class="delivery-card">
-
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 17l6-6 4 4 6-8"></path>
-              <path d="M14 7h6v6"></path>
-            </svg>
-          </div>
-
-          <h3>Agile Delivery & Technical Facilitation</h3>
-
-          <ul>
-            <li>
-              Drive end-to-end Agile execution across
-              cross-functional engineering and quality teams.
-            </li>
-
-            <li>
-              Facilitate Scrum and PI ceremonies aligned with
-              measurable business outcomes.
-            </li>
-
-            <li>
-              Improve delivery maturity, predictability and
-              sprint execution through data-driven insights.
-            </li>
-          </ul>
-        </article>
-
-        <article class="delivery-card">
-
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <circle cx="8" cy="8" r="3"></circle>
-              <circle cx="17" cy="7" r="2"></circle>
-              <path d="M2 20a6 6 0 0 1 12 0"></path>
-              <path d="M14 20a4 4 0 0 1 8 0"></path>
-            </svg>
-          </div>
-
-          <h3>Stakeholder & Enterprise Coordination</h3>
-
-          <ul>
-            <li>
-              Partner with Product Owners, Architects,
-              Business Leaders and technical teams.
-            </li>
-
-            <li>
-              Lead Program Increment planning,
-              roadmap coordination and release orchestration.
-            </li>
-
-            <li>
-              Align technical execution with business priorities,
-              milestones and enterprise objectives.
-            </li>
-          </ul>
-        </article>
-
-        <article class="delivery-card">
-
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <circle cx="12" cy="7" r="4"></circle>
-              <path d="M5 21a7 7 0 0 1 14 0"></path>
-              <path d="M19 8h4"></path>
-              <path d="M21 6v4"></path>
-            </svg>
-          </div>
-
-          <h3>People & Capability Development</h3>
-
-          <ul>
-            <li>
-              Mentor Scrum teams, analysts and
-              technical contributors.
-            </li>
-
-            <li>
-              Strengthen onboarding, knowledge transfer
-              and capability development.
-            </li>
-
-            <li>
-              Encourage accountability, collaboration
-              and continuous improvement.
-            </li>
-          </ul>
-        </article>
-
-        <article class="delivery-card">
-
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 20V10"></path>
-              <path d="M10 20V4"></path>
-              <path d="M16 20v-7"></path>
-              <path d="M22 20H2"></path>
-            </svg>
-          </div>
-
-          <h3>Operational Governance</h3>
-
-          <ul>
-            <li>
-              Own sprint forecasting, capacity planning,
-              delivery tracking and KPI governance.
-            </li>
-
-            <li>
-              Drive transparency through dashboards,
-              metrics and executive reporting.
-            </li>
-
-            <li>
-              Champion process optimisation,
-              automation and release confidence.
-            </li>
-          </ul>
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- =======================================================
-       PROFESSIONAL EXPERIENCE
-  ======================================================== -->
+  <!-- PROFESSIONAL EXPERIENCE -->
 
   <section id="experience">
 
     <div class="container">
 
       <div class="section-head">
+        <div class="section-label">Career Journey</div>
+        <h2>Professional Experience</h2>
 
-        <div class="section-title-row">
-
-          <div class="section-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <rect x="3" y="7" width="18" height="13" rx="2"></rect>
-              <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-              <path d="M3 12h18"></path>
-            </svg>
-          </div>
-
-          <div>
-            <div class="section-label">Career Journey</div>
-            <h2>Professional Experience</h2>
-
-            <p>
-              Progressive leadership across enterprise telecom
-              transformation, Agile delivery, quality engineering,
-              billing modernisation and high-volume data migration.
-            </p>
-          </div>
-
-        </div>
-
+        <p>
+          Progressive leadership across enterprise telecom
+          transformation, quality engineering, Agile delivery,
+          billing modernisation and data migration.
+        </p>
       </div>
 
       <div class="experience-summary">
@@ -2547,10 +2030,10 @@
           </h3>
 
           <p>
-            Career progression across end-to-end quality assurance,
+            Career progression across software quality,
             Salesforce and CPQ transformation, billing migration,
-            SIT governance, Scrum facilitation and large-scale
-            enterprise program delivery.
+            SIT governance, Scrum facilitation and enterprise
+            program delivery.
           </p>
         </div>
 
@@ -2570,23 +2053,33 @@
 
             <h3>Project Manager & Scrum Master</h3>
 
+            <div class="experience-company">
+
+              <div class="company-logo-wrapper">
+                <img
+                  src="vois_logo.jpg"
+                  alt="VOIS logo"
+                  class="company-logo">
+              </div>
+
+              <div class="company-info">
+                <strong>VOIS</strong>
+                <span>
+                  Enterprise Technology & Agile Delivery
+                </span>
+              </div>
+
+            </div>
+
             <p>
               Lead Agile transformation initiatives,
-              orchestrate cross-functional delivery and strengthen
-              execution governance. Drive team predictability,
-              technical dependency management, delivery transparency
-              and alignment with business outcomes.
+              orchestrate cross-functional execution and
+              strengthen delivery governance. Drive team
+              predictability, technical dependency management,
+              transparent reporting and business alignment.
             </p>
 
             <div class="role-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <path d="M12 2 15 8l7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z"></path>
-              </svg>
-
               LEADERSHIP • TRANSFORMATION • AGILE GOVERNANCE
             </div>
 
@@ -2606,26 +2099,32 @@
 
             <h3>Deputy Manager</h3>
 
+            <div class="experience-company">
+
+              <div class="company-logo-wrapper">
+                <img
+                  src="vois_logo.jpg"
+                  alt="VOIS logo"
+                  class="company-logo">
+              </div>
+
+              <div class="company-info">
+                <strong>VOIS</strong>
+                <span>
+                  Telecom Transformation & Delivery
+                </span>
+              </div>
+
+            </div>
+
             <p>
               Defined quality governance and led large-scale
-              billing-validation initiatives across complex
-              telecom transformation programs. Coordinated
-              integration validation, defect governance and
-              release assurance.
+              billing-validation initiatives. Coordinated
+              integration validation, defect governance,
+              migration assurance and release-readiness activities.
             </p>
 
             <div class="role-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <path d="M4 19V9"></path>
-                <path d="M10 19V5"></path>
-                <path d="M16 19v-7"></path>
-                <path d="M22 19H2"></path>
-              </svg>
-
               QA GOVERNANCE • BILLING VALIDATION • ASSURANCE
             </div>
 
@@ -2645,27 +2144,32 @@
 
             <h3>Assistant Manager</h3>
 
+            <div class="experience-company">
+
+              <div class="company-logo-wrapper">
+                <img
+                  src="vois_logo.jpg"
+                  alt="VOIS logo"
+                  class="company-logo">
+              </div>
+
+              <div class="company-info">
+                <strong>VOIS</strong>
+                <span>
+                  Enterprise Technology & Quality Delivery
+                </span>
+              </div>
+
+            </div>
+
             <p>
               Delivered Salesforce, CPQ and automation-led
-              quality initiatives supporting enterprise
-              transformation programs. Promoted Shift-Left
-              practices, early validation and stronger
+              quality initiatives. Promoted Shift-Left practices,
+              early validation, defect prevention and stronger
               release stability.
             </p>
 
             <div class="role-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M12 2v4"></path>
-                <path d="M12 18v4"></path>
-                <path d="M2 12h4"></path>
-                <path d="M18 12h4"></path>
-              </svg>
-
               SALESFORCE • CPQ • AUTOMATION • SHIFT-LEFT
             </div>
 
@@ -2685,6 +2189,22 @@
 
             <h3>Senior Software Test Engineer</h3>
 
+            <div class="experience-company">
+
+              <div class="company-logo-wrapper">
+                <img
+                  src="Skyonn.jpg"
+                  alt="Skyonn logo"
+                  class="company-logo">
+              </div>
+
+              <div class="company-info">
+                <strong>Skyonn</strong>
+                <span>Software Quality Engineering</span>
+              </div>
+
+            </div>
+
             <p>
               Delivered end-to-end quality assurance,
               integration validation and system testing across
@@ -2693,15 +2213,6 @@
             </p>
 
             <div class="role-badge">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2">
-                <path d="M9 11l3 3L22 4"></path>
-                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-              </svg>
-
               END-TO-END QA • VALIDATION • RELEASE CONFIDENCE
             </div>
 
@@ -2715,56 +2226,28 @@
 
   </section>
 
-  <!-- =======================================================
-       MAJOR PROGRAMS
-  ======================================================== -->
+  <!-- MAJOR PROGRAMS -->
 
   <section id="programs">
 
     <div class="container">
 
       <div class="section-head">
+        <div class="section-label">Major Programs</div>
+        <h2>Milestone Delivery Leadership</h2>
 
-        <div class="section-title-row">
-
-          <div class="section-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M3 21h18"></path>
-              <path d="M5 21V8l7-5 7 5v13"></path>
-              <path d="M9 12h6"></path>
-              <path d="M9 16h6"></path>
-            </svg>
-          </div>
-
-          <div>
-            <div class="section-label">Major Programs</div>
-            <h2>Milestone Delivery Leadership</h2>
-
-            <p>
-              Complex telecom-transformation programs combining
-              Agile governance, system integration, migration
-              validation, automation and release assurance.
-            </p>
-          </div>
-
-        </div>
-
+        <p>
+          Complex telecom transformation combining Agile governance,
+          integration, migration, automation and release assurance.
+        </p>
       </div>
 
       <article class="program">
 
         <div class="program-header">
           <small>JUNE 2024 – PRESENT</small>
-
           <h3>Mobile Interconnect Billing Upgrade</h3>
-
-          <p>
-            Technical Scrum Master / Delivery Lead
-          </p>
+          <p>Technical Scrum Master / Delivery Lead</p>
         </div>
 
         <div class="program-body">
@@ -2785,8 +2268,8 @@
 
           <ul>
             <li>
-              Drive end-to-end Agile execution across
-              billing, mediation, data and integration teams.
+              Drive end-to-end Agile execution across billing,
+              mediation, data and integration teams.
             </li>
 
             <li>
@@ -2795,13 +2278,13 @@
             </li>
 
             <li>
-              Govern cross-system dependencies across mediation,
-              enterprise data and financial-processing components.
+              Govern cross-system dependencies and
+              delivery risks.
             </li>
 
             <li>
               Strengthen billing accuracy through structured
-              validation and integration governance.
+              validation and technical governance.
             </li>
 
             <li>
@@ -2811,12 +2294,7 @@
 
             <li>
               Facilitate stakeholder demonstrations,
-              delivery reviews and executive communication.
-            </li>
-
-            <li>
-              Proactively manage delivery risks,
-              blockers and cross-stream dependencies.
+              reviews and executive communication.
             </li>
           </ul>
 
@@ -2824,7 +2302,7 @@
 
             <div class="outcome-item">
               <strong>Agile Governance</strong>
-              <span>PI Planning, Sprints & Delivery Reviews</span>
+              <span>PI Planning, Sprints & Reviews</span>
             </div>
 
             <div class="outcome-item">
@@ -2852,9 +2330,7 @@
             Fixed Telecom Billing Decommission
           </h3>
 
-          <p>
-            SIT Project Manager / Delivery Manager
-          </p>
+          <p>SIT Project Manager / Delivery Manager</p>
         </div>
 
         <div class="program-body">
@@ -2874,33 +2350,26 @@
           <ul>
             <li>
               Led multi-team integration testing and
-              release governance across billing,
-              mediation and network systems.
+              release governance.
             </li>
 
             <li>
               Owned defect governance, root-cause coordination
-              and cross-team resolution strategy.
+              and cross-team resolution.
             </li>
 
             <li>
               Contributed to PI Planning and
-              program-level roadmap alignment.
+              program-roadmap alignment.
             </li>
 
             <li>
-              Designed and implemented the DIM Automation Tool
-              for high-volume reconciliation.
-            </li>
-
-            <li>
-              Reduced a manual validation cycle from
-              five days to five hours.
+              Designed and implemented the DIM Automation Tool.
             </li>
 
             <li>
               Improved reconciliation accuracy,
-              delivery predictability and stakeholder confidence.
+              predictability and stakeholder confidence.
             </li>
 
             <li>
@@ -2923,7 +2392,7 @@
 
             <div class="outcome-item">
               <strong>Higher Confidence</strong>
-              <span>Accuracy, Predictability & Auditability</span>
+              <span>Accuracy & Predictability</span>
             </div>
 
           </div>
@@ -2936,43 +2405,26 @@
 
   </section>
 
-  <!-- =======================================================
-       ACHIEVEMENTS
-  ======================================================== -->
+  <!-- ACHIEVEMENTS -->
 
   <section id="achievements">
 
     <div class="container">
 
       <div class="section-head">
-
         <div class="section-label">Measured Impact</div>
-
         <h2>Achievements That Demonstrate Value</h2>
 
         <p>
-          Quantified outcomes across automation, migration,
-          governance, Agile execution and enterprise transformation.
+          Outcomes across transformation, automation,
+          migration and Agile execution.
         </p>
-
       </div>
 
       <div class="achievement-grid">
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
-              <path d="M4 5v12c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path>
-            </svg>
-          </div>
-
           <strong>500M+ Records</strong>
-
           <p>
             Supported large-scale interconnect-billing
             migration and reconciliation.
@@ -2980,39 +2432,15 @@
         </article>
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M9 11l3 3L22 4"></path>
-              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-            </svg>
-          </div>
-
           <strong>200+ Scenarios</strong>
-
           <p>
-            Enabled comprehensive transformation coverage
-            across Fixed and Mobile Interconnect.
+            Enabled broad transformation coverage across
+            Fixed and Mobile Interconnect.
           </p>
         </article>
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <circle cx="12" cy="12" r="9"></circle>
-              <path d="M12 7v5l4 2"></path>
-            </svg>
-          </div>
-
           <strong>5 Days → 5 Hours</strong>
-
           <p>
             Accelerated manual validation through
             DIM Tool automation.
@@ -3020,102 +2448,39 @@
         </article>
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <circle cx="12" cy="12" r="3"></circle>
-              <path d="M12 2v4"></path>
-              <path d="M12 18v4"></path>
-              <path d="M2 12h4"></path>
-              <path d="M18 12h4"></path>
-            </svg>
-          </div>
-
           <strong>Reusable Automation</strong>
-
           <p>
-            Designed migration and validation approaches including
-            DIM Tool and Velocity Master Tool.
+            Designed reusable migration and
+            validation frameworks.
           </p>
         </article>
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M12 2 15 8l7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z"></path>
-            </svg>
-          </div>
-
           <strong>Top Talent</strong>
-
           <p>
-            Recognised for migration and telecom-billing
+            Recognised for migration and billing
             transformation contributions.
           </p>
         </article>
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <circle cx="12" cy="8" r="5"></circle>
-              <path d="m8 13-2 9 6-3 6 3-2-9"></path>
-            </svg>
-          </div>
-
           <strong>Vodafone Star Award</strong>
-
           <p>
-            Recognised for business collaboration
-            and delivery excellence.
+            Recognised for collaboration and
+            delivery excellence.
           </p>
         </article>
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 17l6-6 4 4 6-8"></path>
-              <path d="M14 7h6v6"></path>
-            </svg>
-          </div>
-
           <strong>Agile Maturity</strong>
-
           <p>
-            Strengthened delivery discipline through PI Planning,
-            sprint governance and transparent reporting.
+            Strengthened delivery through planning,
+            sprint governance and reporting.
           </p>
         </article>
 
         <article class="achievement">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M5 12h14"></path>
-              <path d="m13 6 6 6-6 6"></path>
-              <path d="M5 6v12"></path>
-            </svg>
-          </div>
-
           <strong>Shift-Left Champion</strong>
-
           <p>
             Promoted early defect detection in
             Salesforce CPQ testing.
@@ -3128,47 +2493,23 @@
 
   </section>
 
-  <!-- =======================================================
-       PROGRAM PORTFOLIO
-  ======================================================== -->
+  <!-- PORTFOLIO -->
 
   <section id="portfolio">
 
     <div class="container">
 
       <div class="section-head">
-
-        <div class="section-title-row">
-
-          <div class="section-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <rect x="3" y="3" width="7" height="7"></rect>
-              <rect x="14" y="3" width="7" height="7"></rect>
-              <rect x="3" y="14" width="7" height="7"></rect>
-              <rect x="14" y="14" width="7" height="7"></rect>
-            </svg>
-          </div>
-
-          <div>
-            <div class="section-label">
-              Transformation Portfolio
-            </div>
-
-            <h2>15+ Enterprise Telecom Programs</h2>
-
-            <p>
-              A diverse transformation portfolio spanning billing,
-              mediation, CRM, CPQ, product, infrastructure,
-              network and IoT ecosystems.
-            </p>
-          </div>
-
+        <div class="section-label">
+          Transformation Portfolio
         </div>
 
+        <h2>15+ Enterprise Telecom Programs</h2>
+
+        <p>
+          Programs spanning billing, mediation, CRM, CPQ,
+          infrastructure, product, network and IoT.
+        </p>
       </div>
 
       <div class="portfolio-grid">
@@ -3189,9 +2530,8 @@
           </div>
 
           <p>
-            Supported migration, integration validation,
-            delivery governance and release assurance across
-            enterprise billing and mediation stacks.
+            Migration, integration validation,
+            governance and release assurance.
           </p>
         </article>
 
@@ -3202,14 +2542,13 @@
           <h3>Cloud & Infrastructure Migration</h3>
 
           <div class="portfolio-items">
-            <span class="portfolio-item">iView SFTP to S3 Migration</span>
+            <span class="portfolio-item">iView SFTP to S3</span>
             <span class="portfolio-item">Oracle iView Upgrade</span>
           </div>
 
           <p>
-            Enabled legacy-system modernisation through
-            structured migration, validation and
-            integration-governance practices.
+            Legacy modernisation through structured
+            migration and integration validation.
           </p>
         </article>
 
@@ -3221,14 +2560,14 @@
 
           <div class="portfolio-items">
             <span class="portfolio-item">Vodafone Flex</span>
-            <span class="portfolio-item">Vodafone Red Enterprise Bundles</span>
+            <span class="portfolio-item">Vodafone Red Bundles</span>
             <span class="portfolio-item">IoT Reseller Platform</span>
             <span class="portfolio-item">Device as a Service</span>
           </div>
 
           <p>
-            Supported enterprise product and revenue initiatives
-            spanning voice, data, connected-device and IoT services.
+            Enterprise initiatives spanning voice,
+            data, device and IoT services.
           </p>
         </article>
 
@@ -3246,9 +2585,8 @@
           </div>
 
           <p>
-            Contributed to integrated network, device,
-            CRM and billing validation for enterprise
-            rollout readiness.
+            Integrated network, CRM and billing validation
+            for rollout readiness.
           </p>
         </article>
 
@@ -3267,8 +2605,8 @@
           </div>
 
           <p>
-            Supported pricing configuration, product validation,
-            revenue alignment and Agile release execution.
+            Pricing configuration, validation,
+            revenue alignment and release execution.
           </p>
         </article>
 
@@ -3278,56 +2616,26 @@
 
   </section>
 
-  <!-- =======================================================
-       TECHNICAL SKILLS
-  ======================================================== -->
+  <!-- SKILLS -->
 
   <section id="skills">
 
     <div class="container">
 
       <div class="section-head">
-
-        <div class="section-title-row">
-
-          <div class="section-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="m8 9-4 3 4 3"></path>
-              <path d="m16 9 4 3-4 3"></path>
-              <path d="m14 5-4 14"></path>
-            </svg>
-          </div>
-
-          <div>
-            <div class="section-label">Technology</div>
-            <h2>Technical & Delivery Skills</h2>
-
-            <p>
-              Enterprise platforms, delivery tooling,
-              automation, analytics and technical foundations.
-            </p>
-          </div>
-
-        </div>
-
+        <div class="section-label">Technology</div>
+        <h2>Technical & Delivery Skills</h2>
       </div>
 
       <div class="skills-grid">
 
         <article class="skill-box">
-          <h3>Enterprise Platforms & Telecom Domain</h3>
+          <h3>Enterprise Platforms</h3>
 
           <div class="tags">
             <span class="tag">Telecom OSS/BSS</span>
-            <span class="tag">Amdocs Unified BSS/OSS</span>
+            <span class="tag">Amdocs BSS/OSS</span>
             <span class="tag">Amdocs CRM</span>
-            <span class="tag">Billing Systems</span>
-            <span class="tag">Mediation Systems</span>
-            <span class="tag">Rating Systems</span>
             <span class="tag">Salesforce CRM</span>
             <span class="tag">Salesforce CPQ</span>
             <span class="tag">Oracle CPQ</span>
@@ -3342,7 +2650,7 @@
         </article>
 
         <article class="skill-box">
-          <h3>Program & Delivery Management</h3>
+          <h3>Program & Agile Delivery</h3>
 
           <div class="tags">
             <span class="tag">Agile Delivery</span>
@@ -3351,9 +2659,7 @@
             <span class="tag">PI Planning</span>
             <span class="tag">Release Governance</span>
             <span class="tag">Capacity Planning</span>
-            <span class="tag">Sprint Forecasting</span>
             <span class="tag">Risk Management</span>
-            <span class="tag">Dependency Management</span>
             <span class="tag">Stakeholder Management</span>
             <span class="tag">Jira</span>
             <span class="tag">HP ALM</span>
@@ -3367,13 +2673,11 @@
             <span class="tag">Oracle SQL</span>
             <span class="tag">MySQL</span>
             <span class="tag">SQL Server</span>
-            <span class="tag">High-Volume Reconciliation</span>
             <span class="tag">ETL / ELT Validation</span>
-            <span class="tag">Automation Strategy</span>
+            <span class="tag">Reconciliation</span>
             <span class="tag">Power BI</span>
             <span class="tag">Tableau</span>
             <span class="tag">Data Migration</span>
-            <span class="tag">Data Analysis</span>
           </div>
         </article>
 
@@ -3387,7 +2691,7 @@
             <span class="tag">REST APIs</span>
             <span class="tag">SOAP APIs</span>
             <span class="tag">Git</span>
-            <span class="tag">CI/CD Collaboration</span>
+            <span class="tag">CI/CD</span>
             <span class="tag">System Integration</span>
           </div>
         </article>
@@ -3397,11 +2701,10 @@
 
           <div class="tags">
             <span class="tag">Generative AI</span>
-            <span class="tag">AI-Enabled Delivery Optimisation</span>
             <span class="tag">Knowledge-Grounded Agents</span>
-            <span class="tag">Automation Framework Design</span>
+            <span class="tag">Delivery Optimisation</span>
+            <span class="tag">Automation Frameworks</span>
             <span class="tag">Validation Efficiency</span>
-            <span class="tag">Process Optimisation</span>
           </div>
         </article>
 
@@ -3411,42 +2714,21 @@
 
   </section>
 
-  <!-- =======================================================
-       DOMAIN KNOWLEDGE
-  ======================================================== -->
+  <!-- DOMAIN -->
 
   <section id="domain">
 
     <div class="container">
 
       <div class="section-head">
-
         <div class="section-label">Domain Knowledge</div>
         <h2>Telecom Architecture & Business Flow</h2>
-
-        <p>
-          Experience across enterprise telecom platforms,
-          billing chains, network products and interconnected systems.
-        </p>
-
       </div>
 
       <div class="domain-grid">
 
         <article class="domain-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <rect x="3" y="4" width="18" height="6" rx="2"></rect>
-              <rect x="3" y="14" width="18" height="6" rx="2"></rect>
-            </svg>
-          </div>
-
           <h3>OSS/BSS Architecture</h3>
-
           <p>
             Amdocs Unified BSS/OSS, Amdocs CRM,
             Salesforce CRM, Cramer and ServiceNow.
@@ -3454,67 +2736,27 @@
         </article>
 
         <article class="domain-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
-              <path d="M4 5v12c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path>
-            </svg>
-          </div>
-
           <h3>Billing, Mediation & Rating</h3>
-
           <p>
-            CSGI Mediation and Charging, Kenan FX Billing,
-            Amdocs Billing, iView, reconciliation and
-            rating-flow validation.
+            CSGI Mediation and Charging,
+            Kenan FX Billing, Amdocs Billing and iView.
           </p>
         </article>
 
         <article class="domain-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M5 12.5a10 10 0 0 1 14 0"></path>
-              <path d="M8 15.5a6 6 0 0 1 8 0"></path>
-              <path d="M11 18.5a2 2 0 0 1 2 0"></path>
-            </svg>
-          </div>
-
           <h3>Products & Network Ecosystem</h3>
-
           <p>
             IP Voice, Fixed and Mobile Connectivity,
-            IoT and smart billing platforms, FTTH/FTTN,
-            SD-WAN and submarine-cable networks.
+            IoT, FTTH/FTTN, SD-WAN and
+            submarine-cable networks.
           </p>
         </article>
 
         <article class="domain-card">
-          <div class="card-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M4 12h16"></path>
-              <path d="m14 6 6 6-6 6"></path>
-              <path d="M4 6v12"></path>
-            </svg>
-          </div>
-
-          <h3>End-to-End Enterprise Flow</h3>
-
+          <h3>End-to-End Flow</h3>
           <p>
             Order Capture → Mediation → Rating →
-            Billing → Reconciliation → Invoicing,
-            including integration and production-release support.
+            Billing → Reconciliation → Invoicing.
           </p>
         </article>
 
@@ -3524,112 +2766,84 @@
 
   </section>
 
-  <!-- =======================================================
-       CREDENTIALS
-  ======================================================== -->
+  <!-- EDUCATION -->
 
-  <section id="credentials">
+  <section id="education">
 
     <div class="container">
 
       <div class="section-head">
-
         <div class="section-title-row">
 
-          <div class="section-icon">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M3 10 12 5l9 5-9 5-9-5Z"></path>
-              <path d="M7 12v5c3 2 7 2 10 0v-5"></path>
-            </svg>
-          </div>
+          <div class="section-icon">ED</div>
 
           <div>
-            <div class="section-label">Credentials</div>
-            <h2>Education & Certifications</h2>
+            <div class="section-label">
+              Academic Foundation
+            </div>
+
+            <h2>Education</h2>
 
             <p>
-              Continuous development across Agile leadership,
-              testing, process management, data science and Python.
+              Academic development spanning
+              Computer Science and advanced Data Science.
             </p>
           </div>
 
         </div>
-
       </div>
 
-      <div class="credential-grid">
+      <div class="education-grid">
 
-        <article class="credential-box">
+        <article class="education-tile">
 
-          <h3>Education</h3>
-
-          <div class="credential">
-            <strong>
-              Post Graduate Program in Data Science
-            </strong>
-
-            <span>
-              Caltech | 2023 – 2024
-            </span>
+          <div class="education-logo-box">
+            <img
+              src="Caltech.jpg"
+              alt="Caltech logo"
+              class="education-logo">
           </div>
 
-          <div class="credential">
-            <strong>
-              B.Tech in Computer Science
-            </strong>
+          <div class="education-content">
+            <div class="education-label">
+              Postgraduate Education
+            </div>
 
-            <span>
-              First Class with Distinction |
-              Bharati Vidyapeeth College of Engineering, Pune
-            </span>
+            <h3>
+              Post Graduate Program in Data Science
+            </h3>
+
+            <h4>Caltech</h4>
+            <p>2023 – 2024</p>
           </div>
 
         </article>
 
-        <article class="credential-box">
+        <article class="education-tile">
 
-          <h3>Professional Certifications</h3>
-
-          <div class="credential">
-            <strong>
-              Certified Scrum Master®
-            </strong>
+          <div class="education-logo-box">
+            <img
+              src="bvpcoe_logo.jpg"
+              alt="Bharati Vidyapeeth College of Engineering logo"
+              class="education-logo">
           </div>
 
-          <div class="credential">
-            <strong>
-              SAFe 6 Agilist
-            </strong>
-          </div>
+          <div class="education-content">
+            <div class="education-label">
+              Engineering
+            </div>
 
-          <div class="credential">
-            <strong>
-              ISTQB Certified Tester
-            </strong>
-          </div>
+            <h3>
+              Bachelor of Technology in Computer Science
+            </h3>
 
-          <div class="credential">
-            <strong>
-              Celonis Process Management Foundations
-            </strong>
-          </div>
+            <h4>
+              Bharati Vidyapeeth College of Engineering, Pune
+            </h4>
 
-          <div class="credential">
-            <strong>
-              Post Graduate Program in Data Science
-            </strong>
-            <span>Caltech</span>
-          </div>
-
-          <div class="credential">
-            <strong>
-              Python for Data Science
-            </strong>
-            <span>IBM</span>
+            <p>
+              First Class with Distinction
+            </p>
           </div>
 
         </article>
@@ -3640,9 +2854,138 @@
 
   </section>
 
-  <!-- =======================================================
-       CONTACT
-  ======================================================== -->
+  <!-- PROFESSIONAL CERTIFICATIONS -->
+
+  <section id="certifications">
+
+    <div class="container">
+
+      <div class="section-head">
+        <div class="section-title-row">
+
+          <div class="section-icon">✓</div>
+
+          <div>
+            <div class="section-label">
+              Professional Development
+            </div>
+
+            <h2>Professional Certifications</h2>
+
+            <p>
+              Credentials across Agile leadership,
+              scaled delivery, software quality,
+              process optimisation and data science.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="certification-grid">
+
+        <article class="certification-tile">
+
+          <div class="certification-logo-box">
+            <img
+              src="scrum_alliance_logo_CSM.jpg"
+              alt="Scrum Alliance logo"
+              class="certification-logo">
+          </div>
+
+          <div class="certification-type">
+            Agile Leadership
+          </div>
+
+          <h3>Certified ScrumMaster®</h3>
+          <p>Scrum Alliance</p>
+
+          <div class="certification-accent"></div>
+        </article>
+
+        <article class="certification-tile">
+
+          <div class="certification-logo-box">
+            <img
+              src="scaled_agile_SAFE.jpg"
+              alt="Scaled Agile logo"
+              class="certification-logo">
+          </div>
+
+          <div class="certification-type">
+            Scaled Agile
+          </div>
+
+          <h3>SAFe 6 Agilist</h3>
+          <p>Scaled Agile</p>
+
+          <div class="certification-accent"></div>
+        </article>
+
+        <article class="certification-tile">
+
+          <div class="certification-logo-box">
+            <img
+              src="istqb_logo.jpg"
+              alt="ISTQB logo"
+              class="certification-logo">
+          </div>
+
+          <div class="certification-type">
+            Software Quality
+          </div>
+
+          <h3>ISTQB Certified Tester</h3>
+          <p>ISTQB</p>
+
+          <div class="certification-accent"></div>
+        </article>
+
+        <article class="certification-tile">
+
+          <div class="certification-logo-box">
+            <img
+              src="celonis_logo.jpg"
+              alt="Celonis logo"
+              class="certification-logo">
+          </div>
+
+          <div class="certification-type">
+            Process Optimisation
+          </div>
+
+          <h3>Process Management Foundations</h3>
+          <p>Celonis</p>
+
+          <div class="certification-accent"></div>
+        </article>
+
+        <article class="certification-tile">
+
+          <div class="certification-logo-box">
+            <img
+              src="ibm_Python for Data Science.jpg"
+              alt="IBM Python for Data Science logo"
+              class="certification-logo">
+          </div>
+
+          <div class="certification-type">
+            Data & Technology
+          </div>
+
+          <h3>Python for Data Science</h3>
+          <p>IBM</p>
+
+          <div class="certification-accent"></div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
 
   <section id="contact">
 
@@ -3670,17 +3013,6 @@
           <a
             href="mailto:hemantkrshrma@gmail.com"
             class="btn btn-primary">
-
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-              <path d="m3 7 9 6 9-6"></path>
-            </svg>
-
             Email Me
           </a>
 
@@ -3689,14 +3021,6 @@
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-outline">
-
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="currentColor">
-              <path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.1 2.1 0 1 0 4.75 7.2 2.1 2.1 0 0 0 4.75 3ZM21 13.9c0-3.8-2-5.6-4.7-5.6-2.2 0-3.1 1.2-3.7 2V8.5H9.1V21h3.5v-6.2c0-1.6.3-3.2 2.4-3.2 2.1 0 2.1 1.9 2.1 3.3V21H21v-7.1Z"></path>
-            </svg>
-
             LinkedIn
           </a>
 
@@ -3704,18 +3028,6 @@
             href="Hemant_Sharma_Agile_Project_Manager_CSM_SAFe_8+Years.docx"
             download
             class="btn btn-outline">
-
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2">
-              <path d="M12 3v12"></path>
-              <path d="m7 10 5 5 5-5"></path>
-              <path d="M5 21h14"></path>
-            </svg>
-
             Download Resume
           </a>
 
@@ -3727,52 +3039,25 @@
 
   </section>
 
-  <!-- =======================================================
-       FOOTER
-  ======================================================== -->
-
   <footer>
     © <span id="year"></span>
     Hemant Sharma |
     Technical Project Manager & Agile Delivery Lead
   </footer>
 
-  <!-- =======================================================
-       BACK TO TOP
-  ======================================================== -->
-
   <button
     class="back-to-top"
     id="backToTop"
     type="button"
     aria-label="Back to top">
-
-    <svg
-      class="icon"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2">
-
-      <path d="m6 15 6-6 6 6"></path>
-    </svg>
-
+    ↑
   </button>
-
-  <!-- =======================================================
-       JAVASCRIPT
-  ======================================================== -->
 
   <script>
     "use strict";
 
-    /* Current year */
-
     document.getElementById("year").textContent =
       new Date().getFullYear();
-
-
-    /* Elements */
 
     const navigation =
       document.getElementById("navigation");
@@ -3792,33 +3077,15 @@
     const navLinks =
       document.querySelectorAll(".nav-links a");
 
-
-    /* Mobile menu */
-
     mobileMenuButton.addEventListener("click", () => {
-      const isOpen =
-        navLinksContainer.classList.toggle("open");
-
-      mobileMenuButton.setAttribute(
-        "aria-expanded",
-        String(isOpen)
-      );
+      navLinksContainer.classList.toggle("open");
     });
-
 
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
         navLinksContainer.classList.remove("open");
-
-        mobileMenuButton.setAttribute(
-          "aria-expanded",
-          "false"
-        );
       });
     });
-
-
-    /* Page scrolling */
 
     function handlePageScroll() {
       const scrollTop =
@@ -3848,18 +3115,13 @@
       );
     }
 
-
     window.addEventListener(
       "scroll",
       handlePageScroll,
       { passive: true }
     );
 
-
     handlePageScroll();
-
-
-    /* Back to top */
 
     backToTop.addEventListener("click", () => {
       window.scrollTo({
@@ -3868,9 +3130,6 @@
       });
     });
 
-
-    /* Reveal effects */
-
     const revealItems =
       document.querySelectorAll(
         ".section-head, " +
@@ -3878,17 +3137,16 @@
         ".strength-list, " +
         ".experience-summary, " +
         ".expertise-card, " +
-        ".delivery-card, " +
         ".timeline-entry, " +
         ".program, " +
         ".achievement, " +
         ".portfolio-card, " +
         ".skill-box, " +
         ".domain-card, " +
-        ".credential-box, " +
+        ".education-tile, " +
+        ".certification-tile, " +
         ".contact-card"
       );
-
 
     revealItems.forEach((item, index) => {
       item.classList.add("reveal");
@@ -3896,7 +3154,6 @@
       item.style.transitionDelay =
         Math.min(index % 4, 3) * 65 + "ms";
     });
-
 
     const revealObserver =
       new IntersectionObserver(
@@ -3914,17 +3171,12 @@
         }
       );
 
-
     revealItems.forEach(item => {
       revealObserver.observe(item);
     });
 
-
-    /* Animated counters */
-
     const counters =
       document.querySelectorAll(".counter");
-
 
     const counterObserver =
       new IntersectionObserver(
@@ -3934,62 +3186,39 @@
               return;
             }
 
-            const counter =
-              entry.target;
-
+            const counter = entry.target;
             const target =
               Number(counter.dataset.target);
 
             const suffix =
               counter.dataset.suffix || "";
 
-            const duration =
-              1300;
-
-            const startTime =
-              performance.now();
-
+            const duration = 1300;
+            const startTime = performance.now();
 
             function updateCounter(currentTime) {
               const elapsed =
                 currentTime - startTime;
 
               const progress =
-                Math.min(
-                  elapsed / duration,
-                  1
-                );
+                Math.min(elapsed / duration, 1);
 
-              const easedProgress =
-                1 -
-                Math.pow(
-                  1 - progress,
-                  3
-                );
+              const eased =
+                1 - Math.pow(1 - progress, 3);
 
               const value =
-                Math.floor(
-                  target * easedProgress
-                );
+                Math.floor(target * eased);
 
               counter.textContent =
                 value + suffix;
 
               if (progress < 1) {
-                requestAnimationFrame(
-                  updateCounter
-                );
+                requestAnimationFrame(updateCounter);
               }
             }
 
-
-            requestAnimationFrame(
-              updateCounter
-            );
-
-            counterObserver.unobserve(
-              counter
-            );
+            requestAnimationFrame(updateCounter);
+            counterObserver.unobserve(counter);
           });
         },
         {
@@ -3997,19 +3226,14 @@
         }
       );
 
-
     counters.forEach(counter => {
       counterObserver.observe(counter);
     });
-
-
-    /* Active navigation */
 
     const pageSections =
       document.querySelectorAll(
         "section[id], header[id]"
       );
-
 
     const sectionObserver =
       new IntersectionObserver(
@@ -4022,11 +3246,8 @@
             navLinks.forEach(link => {
               link.classList.remove("active");
 
-              const target =
-                link.getAttribute("href");
-
               if (
-                target ===
+                link.getAttribute("href") ===
                 "#" + entry.target.id
               ) {
                 link.classList.add("active");
@@ -4039,7 +3260,6 @@
             "-35% 0px -55% 0px"
         }
       );
-
 
     pageSections.forEach(section => {
       sectionObserver.observe(section);
