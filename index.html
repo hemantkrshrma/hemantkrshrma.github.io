@@ -1,1 +1,2451 @@
-<img src="profile.jpg" alt="Professional profile photograph" class="profile-image">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Hemant Sharma - Technical Project Manager, Agile Delivery Lead, SAFe Agilist and Certified Scrum Master specializing in enterprise telecom transformation.">
+
+  <title>Hemant Sharma | Technical Project Manager</title>
+
+  <style>
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
+    :root {
+      --red: #e60000;
+      --red-light: #ff4d4d;
+      --navy: #0d1724;
+      --navy2: #15263a;
+      --blue: #153d63;
+      --text: #263545;
+      --muted: #647383;
+      --light: #f5f7fa;
+      --white: #ffffff;
+      --border: #e3e8ee;
+      --green: #2ecc71;
+      --shadow: 0 18px 50px rgba(13, 23, 36, .09);
+      --max: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    section {
+      padding: 95px 0;
+    }
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10, 20, 31, .95);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav-container {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      color: white;
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+
+    .brand span {
+      color: var(--red);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: #bdc8d5;
+      font-size: .88rem;
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 790px;
+      padding-top: 145px;
+      padding-bottom: 110px;
+      color: white;
+
+      background:
+        radial-gradient(circle at 80% 20%,
+        rgba(230,0,0,.18), transparent 27%),
+
+        radial-gradient(circle at 10% 94%,
+        rgba(44,100,150,.16), transparent 30%),
+
+        linear-gradient(135deg, #09131e, #17293e);
+
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .eyebrow {
+      color: #ff6363;
+      text-transform: uppercase;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      margin-bottom: 20px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--red);
+    }
+
+    h1 {
+      font-size: clamp(3.5rem, 7vw, 5.5rem);
+      line-height: .97;
+      letter-spacing: -4px;
+      margin-bottom: 20px;
+    }
+
+    .hero-role {
+      color: #d9e1ea;
+      font-size: clamp(1.2rem, 2vw, 1.55rem);
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .hero-description {
+      max-width: 720px;
+      color: #aabbca;
+      font-size: 1.03rem;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 22px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: .9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: .25s;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #c50000;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.3);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--navy);
+    }
+
+    /* HERO PHOTO */
+
+    .hero-photo {
+      position: relative;
+      max-width: 420px;
+      margin-left: auto;
+    }
+
+    .photo-frame {
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.15);
+      box-shadow: 0 35px 90px rgba(0,0,0,.42);
+      background: var(--navy2);
+    }
+
+    .profile-image {
+      display: block;
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .photo-label {
+      position: absolute;
+      bottom: 25px;
+      left: -30px;
+
+      padding: 15px 18px;
+      border-radius: 12px;
+
+      color: #ddecf5;
+      background: rgba(9,19,30,.94);
+      border: 1px solid rgba(255,255,255,.13);
+      box-shadow: 0 15px 40px rgba(0,0,0,.35);
+
+      font-size: .8rem;
+      font-weight: 600;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 8px;
+      background: var(--green);
+    }
+
+
+    /* =========================================================
+       METRICS
+    ========================================================= */
+
+    .metrics {
+      position: relative;
+      margin-top: -50px;
+      z-index: 15;
+    }
+
+    .metric-grid {
+      background: white;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .metric {
+      padding: 30px 15px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .metric:last-child {
+      border: none;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 2rem;
+      color: var(--red);
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+
+    /* =========================================================
+       SECTION HEADINGS
+    ========================================================= */
+
+    .section-head {
+      max-width: 770px;
+      margin-bottom: 50px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      color: var(--red);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .section-head h2 {
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
+    }
+
+    .about-text p {
+      color: #4e5d6c;
+      margin-bottom: 20px;
+    }
+
+    .strength-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+    }
+
+    .strength {
+      padding: 14px;
+      background: var(--light);
+      border-left: 3px solid var(--red);
+      border-radius: 5px;
+      font-size: .86rem;
+      font-weight: 600;
+    }
+
+
+    /* =========================================================
+       EXPERTISE
+    ========================================================= */
+
+    #expertise {
+      background: var(--light);
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .expertise-card {
+      background: white;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      font-size: .9rem;
+      font-weight: 650;
+      transition: .25s;
+    }
+
+    .expertise-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: transparent;
+    }
+
+
+    /* =========================================================
+       DELIVERY SKILLS
+    ========================================================= */
+
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .delivery-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .delivery-card h3 {
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+
+    .delivery-card li {
+      margin-bottom: 10px;
+      color: #526170;
+    }
+
+
+    /* =========================================================
+       EXPERIENCE
+    ========================================================= */
+
+    #experience {
+      background: var(--light);
+    }
+
+    .timeline {
+      position: relative;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 11px;
+      top: 10px;
+      bottom: 20px;
+      width: 2px;
+      background: #d6dde6;
+    }
+
+    .timeline-entry {
+      position: relative;
+      padding-left: 55px;
+      padding-bottom: 35px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 0;
+      top: 7px;
+
+      width: 24px;
+      height: 24px;
+
+      background: white;
+      border: 6px solid var(--red);
+      border-radius: 50%;
+    }
+
+    .timeline-content {
+      background: white;
+      padding: 28px;
+      border-radius: 15px;
+      border: 1px solid var(--border);
+    }
+
+    .date {
+      color: var(--red);
+      font-weight: 800;
+      font-size: .82rem;
+      margin-bottom: 5px;
+    }
+
+    .timeline-content h3 {
+      margin-bottom: 8px;
+      color: var(--navy);
+    }
+
+    .timeline-content p {
+      color: var(--muted);
+    }
+
+
+    /* =========================================================
+       MILESTONE PROGRAMS
+    ========================================================= */
+
+    .program {
+      margin-bottom: 30px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(13,23,36,.04);
+    }
+
+    .program-header {
+      padding: 28px 32px;
+      background: var(--navy);
+      color: white;
+    }
+
+    .program-header small {
+      color: #ff7070;
+      font-weight: 750;
+    }
+
+    .program-header h3 {
+      font-size: 1.45rem;
+      margin: 6px 0;
+    }
+
+    .program-header p {
+      color: #aebdca;
+    }
+
+    .program-body {
+      padding: 30px 32px;
+    }
+
+    .components {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    .component {
+      background: #fff0f0;
+      color: #a90000;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    .program-body li {
+      margin-bottom: 9px;
+      color: #4f5e6c;
+    }
+
+
+    /* =========================================================
+       ACHIEVEMENTS
+    ========================================================= */
+
+    #achievements {
+      background: var(--navy);
+      color: white;
+    }
+
+    #achievements .section-head h2 {
+      color: white;
+    }
+
+    #achievements .section-head p {
+      color: #a8b6c4;
+    }
+
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .achievement {
+      padding: 27px;
+      border-radius: 14px;
+
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .achievement strong {
+      color: #ff6868;
+      display: block;
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .achievement p {
+      color: #b8c3ce;
+      font-size: .9rem;
+    }
+
+
+    /* =========================================================
+       ENTERPRISE PORTFOLIO
+    ========================================================= */
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .portfolio-card {
+      padding: 28px;
+      border-radius: 15px;
+      background: var(--light);
+      border: 1px solid var(--border);
+    }
+
+    .portfolio-card h3 {
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+
+    .portfolio-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .portfolio-item {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 8px 11px;
+      border-radius: 7px;
+      font-size: .78rem;
+      font-weight: 650;
+    }
+
+    .portfolio-card p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+
+    /* =========================================================
+       SKILLS
+    ========================================================= */
+
+    #skills {
+      background: var(--light);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .skill-box {
+      background: white;
+      padding: 28px;
+      border-radius: 15px;
+      border: 1px solid var(--border);
+    }
+
+    .skill-box h3 {
+      color: var(--navy);
+      margin-bottom: 17px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      font-size: .78rem;
+      padding: 7px 10px;
+      border-radius: 6px;
+      background: var(--light);
+      border: 1px solid var(--border);
+    }
+
+
+    /* =========================================================
+       DOMAIN
+    ========================================================= */
+
+    .domain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .domain-card {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 27px;
+    }
+
+    .domain-card h3 {
+      color: var(--navy);
+      margin-bottom: 13px;
+    }
+
+    .domain-card p {
+      color: var(--muted);
+    }
+
+
+    /* =========================================================
+       CREDENTIALS
+    ========================================================= */
+
+    #credentials {
+      background: var(--light);
+    }
+
+    .credential-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .credential-box {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .credential-box h3 {
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+
+    .credential {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .credential:last-child {
+      border: 0;
+    }
+
+    .credential strong {
+      display: block;
+    }
+
+    .credential span {
+      color: var(--muted);
+      font-size: .85rem;
+    }
+
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-card {
+      padding: 60px;
+      border-radius: 24px;
+      text-align: center;
+
+      color: white;
+      background:
+        radial-gradient(circle at 85% 15%,
+        rgba(230,0,0,.23), transparent 30%),
+        linear-gradient(135deg, #0c1724, #193048);
+    }
+
+    .contact-card h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 13px;
+    }
+
+    .contact-card p {
+      color: #b2c0cd;
+      max-width: 650px;
+      margin: auto auto 26px;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      padding: 28px;
+      background: #08111a;
+      text-align: center;
+      color: #8595a5;
+      font-size: .8rem;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media(max-width: 900px) {
+
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-photo {
+        margin: 20px auto 0;
+      }
+
+      .expertise-grid,
+      .achievement-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .photo-label {
+        left: 15px;
+      }
+
+    }
+
+    @media(max-width: 650px) {
+
+      section {
+        padding: 70px 0;
+      }
+
+      .hero {
+        padding-top: 120px;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        letter-spacing: -3px;
+      }
+
+      .metric-grid,
+      .expertise-grid,
+      .delivery-grid,
+      .achievement-grid,
+      .portfolio-grid,
+      .skills-grid,
+      .domain-grid,
+      .credential-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metric {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .strength-list {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-image {
+        height: 450px;
+      }
+
+      .contact-card {
+        padding: 45px 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav>
+
+  <div class="container nav-container">
+
+    <a href="#home" class="brand">
+      HS<span>.</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header id="home" class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Enterprise Technology & Agile Delivery
+      </div>
+
+      <h1>
+        Hemant<br>
+        Sharma
+      </h1>
+
+      <div class="hero-role">
+        Technical Project Manager |
+        Agile Delivery Lead |
+        SAFe Agilist |
+        CSM
+      </div>
+
+      <p class="hero-description">
+        Enterprise Technical Program & Agile Delivery Leader
+        with 8+ years of experience driving large-scale telecom
+        OSS/BSS, CRM and billing modernization programs.
+        Experienced in managing cross-functional teams,
+        high-volume data migrations and complex multi-system
+        enterprise transformations.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#experience" class="btn btn-primary">
+          Explore Experience
+        </a>
+
+        <a
+          href="Hemant_Sharma_Agile_Project_Manager_CSM_SAFe_8+Years.docx"
+          class="btn btn-outline"
+          download>
+          ↓ Download Resume
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ihemantsharma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline">
+          LinkedIn
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-photo">
+
+      <div class="photo-frame">
+
+        <img
+          src="profile.jpg"
+          alt="Professional profile photograph"
+          class="profile-image">
+
+      </div>
+
+      <div class="photo-label">
+        <span class="status-dot"></span>
+        Technical Project Management • Agile • Transformation
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- =========================================================
+     METRICS
+========================================================= -->
+
+<div class="metrics">
+
+  <div class="container metric-grid">
+
+    <div class="metric">
+      <strong>8+</strong>
+      <span>Years Experience</span>
+    </div>
+
+    <div class="metric">
+      <strong>15+</strong>
+      <span>Enterprise Programs</span>
+    </div>
+
+    <div class="metric">
+      <strong>500M+</strong>
+      <span>Records Validation</span>
+    </div>
+
+    <div class="metric">
+      <strong>200+</strong>
+      <span>Migration Scenarios</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">About Me</div>
+
+      <h2>
+        Technology depth combined with
+        enterprise delivery leadership.
+      </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <p>
+          I am an Enterprise Technical Program and Agile Delivery
+          professional with experience delivering large-scale telecom
+          OSS/BSS, CRM and billing modernization programs.
+        </p>
+
+        <p>
+          My experience combines technical delivery with business
+          alignment, including PI Planning, stakeholder governance,
+          risk mitigation, cross-system dependency management and
+          value-driven roadmap execution.
+        </p>
+
+        <p>
+          I have supported large-scale data migration and reconciliation,
+          including environments processing 500M+ records, while helping
+          teams strengthen release confidence through automation,
+          governance and structured validation.
+        </p>
+
+        <p>
+          I focus on connecting business objectives, architecture,
+          engineering, quality assurance and Agile execution so complex
+          enterprise transformations can progress with transparency
+          and controlled delivery risk.
+        </p>
+
+      </div>
+
+
+      <div class="strength-list">
+
+        <div class="strength">Enterprise Program Delivery</div>
+        <div class="strength">Agile Transformation</div>
+        <div class="strength">Telecom OSS/BSS</div>
+        <div class="strength">Billing Modernization</div>
+        <div class="strength">Data Migration</div>
+        <div class="strength">Automation Strategy</div>
+        <div class="strength">Stakeholder Governance</div>
+        <div class="strength">PI Planning</div>
+        <div class="strength">Cross-Team Leadership</div>
+        <div class="strength">Risk Management</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERTISE
+========================================================= -->
+
+<section id="expertise">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">Core Expertise</div>
+
+      <h2>Enterprise Delivery Capabilities</h2>
+
+    </div>
+
+
+    <div class="expertise-grid">
+
+      <div class="expertise-card">
+        Agile Coaching & Scrum Facilitation
+      </div>
+
+      <div class="expertise-card">
+        PI Planning & Program Increment Execution
+      </div>
+
+      <div class="expertise-card">
+        Cross-Functional Delivery Governance
+      </div>
+
+      <div class="expertise-card">
+        Stakeholder & Executive Communication
+      </div>
+
+      <div class="expertise-card">
+        Risk & Dependency Management
+      </div>
+
+      <div class="expertise-card">
+        Enterprise Roadmap Alignment
+      </div>
+
+      <div class="expertise-card">
+        Telecom OSS/BSS & Billing Transformation
+      </div>
+
+      <div class="expertise-card">
+        System Integration & Data Migration Oversight
+      </div>
+
+      <div class="expertise-card">
+        DevOps & CI/CD Enablement
+      </div>
+
+      <div class="expertise-card">
+        Process Optimization & Automation Strategy
+      </div>
+
+      <div class="expertise-card">
+        Multi-Team Coordination
+      </div>
+
+      <div class="expertise-card">
+        Value-Driven Delivery Management
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     DELIVERY LEADERSHIP
+========================================================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">Leadership</div>
+
+      <h2>Team Facilitation & Delivery Skills</h2>
+
+    </div>
+
+
+    <div class="delivery-grid">
+
+
+      <div class="delivery-card">
+
+        <h3>Agile Delivery & Technical Facilitation</h3>
+
+        <ul>
+          <li>
+            Drive end-to-end Agile execution across
+            cross-functional engineering teams.
+          </li>
+
+          <li>
+            Facilitate Scrum and PI ceremonies aligned
+            to business outcomes.
+          </li>
+
+          <li>
+            Improve Agile maturity, predictability and sprint
+            velocity through data-driven insights.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="delivery-card">
+
+        <h3>Stakeholder & Enterprise Coordination</h3>
+
+        <ul>
+          <li>
+            Partner with Product Owners, Architects
+            and Business Leaders across geographies.
+          </li>
+
+          <li>
+            Lead Program Increment planning
+            and release orchestration.
+          </li>
+
+          <li>
+            Align technical execution with business
+            OKRs and market timelines.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="delivery-card">
+
+        <h3>People & Capability Development</h3>
+
+        <ul>
+          <li>Mentor Scrum teams, BAs and technical contributors.</li>
+
+          <li>
+            Build teams through structured onboarding
+            and skill uplift.
+          </li>
+
+          <li>
+            Support hiring, performance feedback
+            and succession planning.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="delivery-card">
+
+        <h3>Operational Governance & Delivery Excellence</h3>
+
+        <ul>
+          <li>
+            Own sprint forecasting, capacity planning
+            and KPI governance.
+          </li>
+
+          <li>
+            Drive transparency through metrics dashboards
+            and executive reporting.
+          </li>
+
+          <li>
+            Champion continuous improvement across
+            process, tooling and automation.
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section id="experience">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">Career Journey</div>
+
+      <h2>Professional Experience</h2>
+
+      <p>
+        Progressive experience across enterprise telecom
+        technology delivery, quality engineering,
+        Agile leadership and program execution.
+      </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+      <div class="timeline-entry">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <div class="date">
+            JUL 2024 – PRESENT
+          </div>
+
+          <h3>
+            Project Manager & Scrum Master
+          </h3>
+
+          <p>
+            Leading Agile transformation initiatives,
+            enhancing team velocity and supporting
+            cross-functional delivery excellence.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-entry">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <div class="date">
+            JAN 2022 – JUL 2024
+          </div>
+
+          <h3>
+            Deputy Manager
+          </h3>
+
+          <p>
+            Defined QA governance and led large-scale
+            billing validation initiatives.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-entry">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <div class="date">
+            AUG 2020 – DEC 2021
+          </div>
+
+          <h3>
+            Assistant Manager
+          </h3>
+
+          <p>
+            Executed CPQ, Salesforce and automation
+            testing initiatives for Vodafone Global
+            Enterprise transformation programs.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-entry">
+
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+
+          <div class="date">
+            OCT 2018 – AUG 2020
+          </div>
+
+          <h3>
+            Senior Software Test Engineer
+          </h3>
+
+          <p>
+            Delivered end-to-end QA for Global
+            Enterprise business initiatives.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     MILESTONE PROGRAMS
+========================================================= -->
+
+<section id="programs">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">Major Programs</div>
+
+      <h2>Milestone Programs & Delivery Leadership</h2>
+
+    </div>
+
+
+    <!-- MOBILE PROGRAM -->
+
+    <div class="program">
+
+      <div class="program-header">
+
+        <small>
+          JUNE 2024 – PRESENT
+        </small>
+
+        <h3>
+          Mobile Interconnect Billing Upgrade
+        </h3>
+
+        <p>
+          VOIS | Technical Scrum Master / Delivery Lead
+        </p>
+
+      </div>
+
+
+      <div class="program-body">
+
+        <h4 style="margin-bottom:12px;">
+          Enterprise Components
+        </h4>
+
+        <div class="components">
+
+          <span class="component">SMART Term Mediation</span>
+          <span class="component">CSGI Mediation</span>
+          <span class="component">EDW</span>
+          <span class="component">FINCA</span>
+          <span class="component">DCM</span>
+          <span class="component">MFT</span>
+          <span class="component">Network</span>
+          <span class="component">RAID</span>
+          <span class="component">FH</span>
+
+        </div>
+
+
+        <ul>
+
+          <li>
+            Drive end-to-end Agile execution across
+            billing, mediation and data teams.
+          </li>
+
+          <li>
+            Lead PI ceremonies and sprint orchestration
+            aligned with business delivery milestones.
+          </li>
+
+          <li>
+            Own cross-system dependency management across
+            mediation, EDW and financial modules.
+          </li>
+
+          <li>
+            Ensure billing accuracy through large-scale data
+            validation and middleware integration oversight.
+          </li>
+
+          <li>
+            Enable DevOps maturity through CI/CD alignment
+            and automation-driven quality gates.
+          </li>
+
+          <li>
+            Facilitate executive sprint demos and stakeholder
+            alignment across geographies.
+          </li>
+
+          <li>
+            Proactively manage delivery risks and cross-stream
+            coordination to maintain release timelines.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <!-- FIXED PROGRAM -->
+
+    <div class="program">
+
+      <div class="program-header">
+
+        <small>
+          MARCH 2023 – JUNE 2024
+        </small>
+
+        <h3>
+          Fixed Telecom Billing Decommission (SSBS)
+        </h3>
+
+        <p>
+          VOIS | SIT Project Manager / Delivery Manager
+        </p>
+
+      </div>
+
+
+      <div class="program-body">
+
+        <h4 style="margin-bottom:12px;">
+          Teams / Components
+        </h4>
+
+        <div class="components">
+
+          <span class="component">CSGI WBMS</span>
+          <span class="component">SSBS</span>
+          <span class="component">FH</span>
+          <span class="component">DCM</span>
+          <span class="component">MFT</span>
+          <span class="component">Fixed MZ</span>
+          <span class="component">Network</span>
+
+        </div>
+
+
+        <ul>
+
+          <li>
+            Led multi-team integration testing and release
+            governance across billing and network systems.
+          </li>
+
+          <li>
+            Owned defect governance, RCA orchestration
+            and cross-team resolution strategy.
+          </li>
+
+          <li>
+            Contributed to PI planning and program-level
+            roadmap alignment.
+          </li>
+
+          <li>
+            Designed and implemented the DIM Automation Tool
+            to reconcile 500M+ records.
+          </li>
+
+          <li>
+            Reduced 5 days of manual validation to 5 hours.
+          </li>
+
+          <li>
+            Improved reconciliation accuracy
+            and stakeholder confidence.
+          </li>
+
+          <li>
+            Strengthened release predictability
+            and audit compliance.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ACHIEVEMENTS
+========================================================= -->
+
+<section id="achievements">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">
+        Achievements
+      </div>
+
+      <h2>
+        Measurable Delivery Impact
+      </h2>
+
+      <p>
+        Selected outcomes across transformation,
+        migration, automation and Agile delivery.
+      </p>
+
+    </div>
+
+
+    <div class="achievement-grid">
+
+
+      <div class="achievement">
+
+        <strong>500M+ Daily Records</strong>
+
+        <p>
+          Led Fixed/Mobile Interconnect Billing System
+          decommissioning with migration across
+          high-volume billing data.
+        </p>
+
+      </div>
+
+
+      <div class="achievement">
+
+        <strong>200+ Scenarios</strong>
+
+        <p>
+          Supported seamless Fixed/Mobile Interconnect
+          billing transformation across more than
+          200 scenarios.
+        </p>
+
+      </div>
+
+
+      <div class="achievement">
+
+        <strong>5 Days → 5 Hours</strong>
+
+        <p>
+          Reduced manual validation through
+          DIM Tool automation.
+        </p>
+
+      </div>
+
+
+      <div class="achievement">
+
+        <strong>Automation Frameworks</strong>
+
+        <p>
+          Designed reusable migration and ETL/ELT
+          frameworks including DIM Tool and
+          Velocity Master Tool.
+        </p>
+
+      </div>
+
+
+      <div class="achievement">
+
+        <strong>Top Talent</strong>
+
+        <p>
+          Recognized for successful end-to-end migration
+          and telecom billing transformation initiatives.
+        </p>
+
+      </div>
+
+
+      <div class="achievement">
+
+        <strong>Vodafone Star Award</strong>
+
+        <p>
+          Received Vodafone Star Award and additional
+          recognition for business collaboration
+          and delivery excellence.
+        </p>
+
+      </div>
+
+
+      <div class="achievement">
+
+        <strong>Agile Delivery</strong>
+
+        <p>
+          Improved Agile delivery maturity and stakeholder
+          confidence through structured PI planning
+          and sprint governance.
+        </p>
+
+      </div>
+
+
+      <div class="achievement">
+
+        <strong>Shift-Left</strong>
+
+        <p>
+          Delivered early defect detection as Shift-Left
+          champion in Salesforce CPQ testing,
+          supporting improved release stability.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ENTERPRISE PROGRAM PORTFOLIO
+========================================================= -->
+
+<section id="portfolio">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">
+        Transformation Portfolio
+      </div>
+
+      <h2>
+        15+ Enterprise Telecom Programs
+      </h2>
+
+      <p>
+        Transformation initiatives spanning billing,
+        mediation, Salesforce, CRM, IoT,
+        infrastructure and network modernization.
+      </p>
+
+    </div>
+
+
+    <div class="portfolio-grid">
+
+
+      <div class="portfolio-card">
+
+        <h3>Billing & Mediation Modernization</h3>
+
+        <div class="portfolio-items">
+
+          <span class="portfolio-item">
+            Kenan Billing Upgrade
+          </span>
+
+          <span class="portfolio-item">
+            NMR Architecture Upgrade
+          </span>
+
+          <span class="portfolio-item">
+            A2 Soft Mediation Switch
+          </span>
+
+          <span class="portfolio-item">
+            SSBS Decommissioning
+          </span>
+
+          <span class="portfolio-item">
+            MZ Upgrade
+          </span>
+
+          <span class="portfolio-item">
+            iView Upgrade
+          </span>
+
+        </div>
+
+        <p>
+          Supported system migration, integration
+          validation and release governance across
+          enterprise billing stacks.
+        </p>
+
+      </div>
+
+
+      <div class="portfolio-card">
+
+        <h3>Cloud & Infrastructure Migration</h3>
+
+        <div class="portfolio-items">
+
+          <span class="portfolio-item">
+            iView SFTP to S3 Migration
+          </span>
+
+          <span class="portfolio-item">
+            Oracle iView Upgrade
+          </span>
+
+        </div>
+
+        <p>
+          Enabled modernization of legacy systems
+          through structured data migration
+          and integration validation.
+        </p>
+
+      </div>
+
+
+      <div class="portfolio-card">
+
+        <h3>Product & Revenue Programs</h3>
+
+        <div class="portfolio-items">
+
+          <span class="portfolio-item">
+            Vodafone Flex
+          </span>
+
+          <span class="portfolio-item">
+            Vodafone Red Enterprise Bundles
+          </span>
+
+          <span class="portfolio-item">
+            IoT Reseller Platform
+          </span>
+
+          <span class="portfolio-item">
+            Device as a Service (DLM)
+          </span>
+
+        </div>
+
+        <p>
+          Delivered enterprise telecom product
+          launches spanning voice, data,
+          IoT and revenue platforms.
+        </p>
+
+      </div>
+
+
+      <div class="portfolio-card">
+
+        <h3>Network & Enterprise Programs</h3>
+
+        <div class="portfolio-items">
+
+          <span class="portfolio-item">
+            Apollo Submarine Cable
+          </span>
+
+          <span class="portfolio-item">
+            NB-IoT
+          </span>
+
+          <span class="portfolio-item">
+            LTE-M
+          </span>
+
+          <span class="portfolio-item">
+            LPWA
+          </span>
+
+        </div>
+
+        <p>
+          Contributed to network-integrated Salesforce
+          and Billing validation for enterprise
+          rollout readiness.
+        </p>
+
+      </div>
+
+
+      <div class="portfolio-card">
+
+        <h3>CRM & CPQ Implementations</h3>
+
+        <div class="portfolio-items">
+
+          <span class="portfolio-item">
+            Salesforce
+          </span>
+
+          <span class="portfolio-item">
+            Oracle CPQ
+          </span>
+
+          <span class="portfolio-item">
+            Voice Bundling
+          </span>
+
+          <span class="portfolio-item">
+            Data Bundling
+          </span>
+
+        </div>
+
+        <p>
+          Supported end-to-end pricing configuration,
+          revenue alignment and Agile release execution.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TECHNICAL SKILLS
+========================================================= -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">
+        Technology
+      </div>
+
+      <h2>
+        Technical Skills
+      </h2>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+      <div class="skill-box">
+
+        <h3>
+          Enterprise Platforms & Domain
+        </h3>
+
+        <div class="tags">
+
+          <span class="tag">Telecom OSS/BSS</span>
+          <span class="tag">Billing Systems</span>
+          <span class="tag">Mediation Systems</span>
+          <span class="tag">Salesforce CRM</span>
+          <span class="tag">Salesforce CPQ</span>
+          <span class="tag">Oracle CPQ</span>
+          <span class="tag">Kenan FX</span>
+          <span class="tag">CSGI WBMS</span>
+          <span class="tag">CSGI Mediation</span>
+          <span class="tag">iBill</span>
+          <span class="tag">iView</span>
+          <span class="tag">Rating Systems</span>
+          <span class="tag">Enterprise Data Migration</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-box">
+
+        <h3>
+          Program & Delivery Tools
+        </h3>
+
+        <div class="tags">
+
+          <span class="tag">Jira</span>
+          <span class="tag">HP ALM</span>
+          <span class="tag">Git</span>
+          <span class="tag">CI/CD Collaboration</span>
+          <span class="tag">PI Planning</span>
+          <span class="tag">Release Governance</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-box">
+
+        <h3>
+          Data & Automation
+        </h3>
+
+        <div class="tags">
+
+          <span class="tag">Oracle SQL</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">500M+ Record Validation</span>
+          <span class="tag">ETL Framework Oversight</span>
+          <span class="tag">Automation Strategy</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Tableau</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-box">
+
+        <h3>
+          Scripting & Technical Foundations
+        </h3>
+
+        <div class="tags">
+
+          <span class="tag">Python</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Unix Shell Scripting</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">SOAP APIs</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="skill-box">
+
+        <h3>
+          AI-Enabled Delivery
+        </h3>
+
+        <div class="tags">
+
+          <span class="tag">
+            Generative AI-enabled Delivery Optimization
+          </span>
+
+          <span class="tag">
+            Automation Framework Design
+          </span>
+
+          <span class="tag">
+            Validation Efficiency
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     DOMAIN KNOWLEDGE
+========================================================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">
+        Domain
+      </div>
+
+      <h2>Telecom Domain Knowledge</h2>
+
+    </div>
+
+
+    <div class="domain-grid">
+
+
+      <div class="domain-card">
+
+        <h3>OSS/BSS Architecture</h3>
+
+        <p>
+          Amdocs Unified BSS/OSS •
+          Amdocs CRM •
+          Salesforce CRM •
+          Cramer •
+          ServiceNow
+        </p>
+
+      </div>
+
+
+      <div class="domain-card">
+
+        <h3>Billing, Mediation & Rating</h3>
+
+        <p>
+          CSGI Mediation & Charging •
+          Kenan FX Billing •
+          Amdocs Billing •
+          iView
+        </p>
+
+      </div>
+
+
+      <div class="domain-card">
+
+        <h3>Products & Network Ecosystem</h3>
+
+        <p>
+          IP Voice •
+          Fixed & Mobile Connectivity •
+          Vodafone Mobility Solutions •
+          IoT & Smart Billing Platforms •
+          FTTH / FTTN •
+          SD-WAN •
+          Submarine Cable Networks
+        </p>
+
+      </div>
+
+
+      <div class="domain-card">
+
+        <h3>Enterprise Capabilities</h3>
+
+        <p>
+          Large-scale billing validation •
+          Mediation-to-rating reconciliation •
+          Data migration •
+          Production release support •
+          Order Capture →
+          Mediation →
+          Rating →
+          Billing →
+          Invoicing
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EDUCATION + CERTIFICATIONS
+========================================================= -->
+
+<section id="credentials">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-label">
+        Credentials
+      </div>
+
+      <h2>
+        Education & Certifications
+      </h2>
+
+    </div>
+
+
+    <div class="credential-grid">
+
+
+      <div class="credential-box">
+
+        <h3>Education</h3>
+
+        <div class="credential">
+
+          <strong>
+            Post Graduate Program in Data Science
+          </strong>
+
+          <span>
+            Caltech | 2023 – 2024
+          </span>
+
+        </div>
+
+
+        <div class="credential">
+
+          <strong>
+            B.Tech – Computer Science
+          </strong>
+
+          <span>
+            First Class with Distinction |
+            Bharati Vidyapeeth College of Engineering,
+            Pune | 2010 – 2015
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="credential-box">
+
+        <h3>
+          Professional Certifications
+        </h3>
+
+        <div class="credential">
+          <strong>Certified Scrum Master® (CSM)</strong>
+        </div>
+
+        <div class="credential">
+          <strong>SAFe 6 Agilist</strong>
+        </div>
+
+        <div class="credential">
+          <strong>ISTQB Certified Tester</strong>
+        </div>
+
+        <div class="credential">
+          <strong>Celonis Process Management Foundations</strong>
+        </div>
+
+        <div class="credential">
+
+          <strong>
+            Post Graduate Program in Data Science
+          </strong>
+
+          <span>Caltech</span>
+
+        </div>
+
+        <div class="credential">
+
+          <strong>
+            Python for Data Science
+          </strong>
+
+          <span>IBM</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact-card">
+
+      <div class="section-label">
+        Let's Connect
+      </div>
+
+      <h2>
+        Delivering transformation
+        through technology & Agile.
+      </h2>
+
+      <p>
+        Technical Project Management •
+        Enterprise Transformation •
+        Agile Delivery •
+        Telecom OSS/BSS •
+        Billing & Mediation •
+        Automation •
+        AI-enabled Delivery
+      </p>
+
+
+      <div class="contact-actions">
+
+        <a
+          href="mailto:hemantkrshrma@gmail.com"
+          class="btn btn-primary">
+          Email Me
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/ihemantsharma/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-outline">
+          LinkedIn
+        </a>
+
+
+        <a
+          href="Hemant_Sharma_Agile_Project_Manager_CSM_SAFe_8+Years.docx"
+          download
+          class="btn btn-outline">
+          ↓ Download Resume
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  © <span id="year"></span>
+  Hemant Sharma |
+  Technical Project Manager &
+  Agile Delivery Lead
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+  /* Automatic current year */
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+  /* Scroll reveal */
+
+  const revealItems =
+    document.querySelectorAll(
+      ".expertise-card, .delivery-card, .timeline-content, " +
+      ".program, .achievement, .portfolio-card, .skill-box, " +
+      ".domain-card, .credential-box"
+    );
+
+
+  revealItems.forEach(item => {
+
+    item.style.opacity = "0";
+    item.style.transform = "translateY(18px)";
+
+    item.style.transition =
+      "opacity .55s ease, transform .55s ease";
+
+  });
+
+
+  const observer =
+    new IntersectionObserver(entries => {
+
+      entries.forEach(entry => {
+
+        if(entry.isIntersecting) {
+
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+
+          observer.unobserve(entry.target);
+
+        }
+
+      });
+
+    }, {
+      threshold: .08
+    });
+
+
+  revealItems.forEach(item =>
+    observer.observe(item)
+  );
+
+</script>
+
+
+</body>
+</html>
